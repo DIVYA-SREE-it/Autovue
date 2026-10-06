@@ -1,0 +1,4 @@
+track_id,frame,ground_truth,plate_layout,verification
+108,288,AP31AE7144,two_line,manual_visual
+123,289,AP31AE7144,two_line,manual_visual
+252,661,AP11Z3837,two_line,manual_visual

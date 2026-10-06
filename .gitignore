@@ -1,0 +1,51 @@
+# Virtual environments
+.venv/
+.venv_paddleocr/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Dataset - keep dataset scripts/configs, not raw data
+data/raw/
+data/processed/
+
+# Test videos
+data/test_videos/*.mp4
+data/test_videos/*.avi
+data/test_videos/*Zone.Identifier*
+
+# Trained model weights
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Training runs
+experiments/**/weights/
+runs/
+
+# Large visual outputs
+outputs/**/*.mp4
+outputs/**/*.avi
+outputs/**/*.jpg
+outputs/**/*.jpeg
+outputs/**/*.png
+
+# Archives
+*.zip
+*.tar
+*.gz
+
+# IDE / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Paddle downloaded models
+.paddlex/

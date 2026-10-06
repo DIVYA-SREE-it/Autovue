@@ -1,0 +1,4 @@
+track_id,final_plate,status,frame_support,variant_support,mean_ocr_confidence,mean_correction_cost,fusion_score
+108,AP31AE7144,NEEDS_REVIEW,1,3,0.8912,0.0,5.0136
+123,,REJECTED,0,0,0.0,0.0,0.0
+252,AP11Z3837,NEEDS_REVIEW,1,5,0.9584,2.0,6.55

@@ -1,0 +1,66 @@
+track_id,frame,rank,vehicle,filename,variant,ocr_lines,raw_text,ocr_confidence,normalized_plate,correction_cost,quality_score,plate_confidence
+108,264,1,motorcycle,track_0108_rank_1_frame_00264_score_0.777.jpg,original,WWILE,WWILE,0.8829,,-1,0.7772,0.7407
+108,264,1,motorcycle,track_0108_rank_1_frame_00264_score_0.777.jpg,upscaled,WWIL,WWIL,0.9068,,-1,0.7772,0.7407
+108,264,1,motorcycle,track_0108_rank_1_frame_00264_score_0.777.jpg,clahe,WWILE,WWILE,0.9332,,-1,0.7772,0.7407
+108,264,1,motorcycle,track_0108_rank_1_frame_00264_score_0.777.jpg,sharpened,WWILE,WWILE,0.9361,,-1,0.7772,0.7407
+108,264,1,motorcycle,track_0108_rank_1_frame_00264_score_0.777.jpg,threshold,4VWI,4VWI,0.6328,,-1,0.7772,0.7407
+108,288,2,motorcycle,track_0108_rank_2_frame_00288_score_0.765.jpg,original,AE7144,AE7144,0.9962,,-1,0.7652,0.8655
+108,288,2,motorcycle,track_0108_rank_2_frame_00288_score_0.765.jpg,upscaled,AP31 | AE7144,AP31AE7144,0.8939,AP31AE7144,0,0.7652,0.8655
+108,288,2,motorcycle,track_0108_rank_2_frame_00288_score_0.765.jpg,clahe,AP31 | AE7144,AP31AE7144,0.8871,AP31AE7144,0,0.7652,0.8655
+108,288,2,motorcycle,track_0108_rank_2_frame_00288_score_0.765.jpg,sharpened,AP31 | AE7144,AP31AE7144,0.8924,AP31AE7144,0,0.7652,0.8655
+108,288,2,motorcycle,track_0108_rank_2_frame_00288_score_0.765.jpg,threshold,AET1JJ,AET1JJ,0.5863,,-1,0.7652,0.8655
+108,294,3,motorcycle,track_0108_rank_3_frame_00294_score_0.742.jpg,original,,,0.0,,-1,0.7421,0.8474
+108,294,3,motorcycle,track_0108_rank_3_frame_00294_score_0.742.jpg,upscaled,AFT14,AFT14,0.7694,,-1,0.7421,0.8474
+108,294,3,motorcycle,track_0108_rank_3_frame_00294_score_0.742.jpg,clahe,,,0.0,,-1,0.7421,0.8474
+108,294,3,motorcycle,track_0108_rank_3_frame_00294_score_0.742.jpg,sharpened,,,0.0,,-1,0.7421,0.8474
+108,294,3,motorcycle,track_0108_rank_3_frame_00294_score_0.742.jpg,threshold,,,0.0,,-1,0.7421,0.8474
+108,238,4,motorcycle,track_0108_rank_4_frame_00238_score_0.723.jpg,original,INDIACO,INDIACO,0.9873,,-1,0.7235,0.726
+108,238,4,motorcycle,track_0108_rank_4_frame_00238_score_0.723.jpg,upscaled,INDIACO,INDIACO,0.9949,,-1,0.7235,0.726
+108,238,4,motorcycle,track_0108_rank_4_frame_00238_score_0.723.jpg,clahe,INDIACO,INDIACO,0.9941,,-1,0.7235,0.726
+108,238,4,motorcycle,track_0108_rank_4_frame_00238_score_0.723.jpg,sharpened,INDIACO,INDIACO,0.9891,,-1,0.7235,0.726
+108,238,4,motorcycle,track_0108_rank_4_frame_00238_score_0.723.jpg,threshold,MDIAC,MDIAC,0.9681,,-1,0.7235,0.726
+108,275,5,motorcycle,track_0108_rank_5_frame_00275_score_0.687.jpg,original,IPSH | AE7144,IPSHAE7144,0.6546,,-1,0.6867,0.8798
+108,275,5,motorcycle,track_0108_rank_5_frame_00275_score_0.687.jpg,upscaled,P3 | A57144,P3A57144,0.784,,-1,0.6867,0.8798
+108,275,5,motorcycle,track_0108_rank_5_frame_00275_score_0.687.jpg,clahe,31 | AE7144,31AE7144,0.7813,,-1,0.6867,0.8798
+108,275,5,motorcycle,track_0108_rank_5_frame_00275_score_0.687.jpg,sharpened,AP3 | AE7144,AP3AE7144,0.7095,,-1,0.6867,0.8798
+108,275,5,motorcycle,track_0108_rank_5_frame_00275_score_0.687.jpg,threshold,I,I,0.5099,,-1,0.6867,0.8798
+123,289,1,motorcycle,track_0123_rank_1_frame_00289_score_0.783.jpg,original,VANRO | AE7144,VANROAE7144,0.8447,,-1,0.783,0.8748
+123,289,1,motorcycle,track_0123_rank_1_frame_00289_score_0.783.jpg,upscaled,AHSO | AE7144,AHSOAE7144,0.8099,,-1,0.783,0.8748
+123,289,1,motorcycle,track_0123_rank_1_frame_00289_score_0.783.jpg,clahe,AE7144,AE7144,0.9965,,-1,0.783,0.8748
+123,289,1,motorcycle,track_0123_rank_1_frame_00289_score_0.783.jpg,sharpened,AHSO | AE7144,AHSOAE7144,0.85,,-1,0.783,0.8748
+123,289,1,motorcycle,track_0123_rank_1_frame_00289_score_0.783.jpg,threshold,AETIJJ,AETIJJ,0.6525,,-1,0.783,0.8748
+123,294,2,motorcycle,track_0123_rank_2_frame_00294_score_0.750.jpg,original,,,0.0,,-1,0.7498,0.8613
+123,294,2,motorcycle,track_0123_rank_2_frame_00294_score_0.750.jpg,upscaled,AFT14,AFT14,0.7694,,-1,0.7498,0.8613
+123,294,2,motorcycle,track_0123_rank_2_frame_00294_score_0.750.jpg,clahe,,,0.0,,-1,0.7498,0.8613
+123,294,2,motorcycle,track_0123_rank_2_frame_00294_score_0.750.jpg,sharpened,,,0.0,,-1,0.7498,0.8613
+123,294,2,motorcycle,track_0123_rank_2_frame_00294_score_0.750.jpg,threshold,,,0.0,,-1,0.7498,0.8613
+123,304,3,motorcycle,track_0123_rank_3_frame_00304_score_0.673.jpg,original,,,0.0,,-1,0.6729,0.7647
+123,304,3,motorcycle,track_0123_rank_3_frame_00304_score_0.673.jpg,upscaled,,,0.0,,-1,0.6729,0.7647
+123,304,3,motorcycle,track_0123_rank_3_frame_00304_score_0.673.jpg,clahe,,,0.0,,-1,0.6729,0.7647
+123,304,3,motorcycle,track_0123_rank_3_frame_00304_score_0.673.jpg,sharpened,,,0.0,,-1,0.6729,0.7647
+123,304,3,motorcycle,track_0123_rank_3_frame_00304_score_0.673.jpg,threshold,,,0.0,,-1,0.6729,0.7647
+252,748,1,bus,track_0252_rank_1_frame_00748_score_0.820.jpg,original,,,0.0,,-1,0.8197,0.8544
+252,748,1,bus,track_0252_rank_1_frame_00748_score_0.820.jpg,upscaled,,,0.0,,-1,0.8197,0.8544
+252,748,1,bus,track_0252_rank_1_frame_00748_score_0.820.jpg,clahe,,,0.0,,-1,0.8197,0.8544
+252,748,1,bus,track_0252_rank_1_frame_00748_score_0.820.jpg,sharpened,,,0.0,,-1,0.8197,0.8544
+252,748,1,bus,track_0252_rank_1_frame_00748_score_0.820.jpg,threshold,1,1,0.2307,,-1,0.8197,0.8544
+252,743,2,bus,track_0252_rank_2_frame_00743_score_0.801.jpg,original,,,0.0,,-1,0.8011,0.8064
+252,743,2,bus,track_0252_rank_2_frame_00743_score_0.801.jpg,upscaled,,,0.0,,-1,0.8011,0.8064
+252,743,2,bus,track_0252_rank_2_frame_00743_score_0.801.jpg,clahe,WH,WH,0.4469,,-1,0.8011,0.8064
+252,743,2,bus,track_0252_rank_2_frame_00743_score_0.801.jpg,sharpened,,,0.0,,-1,0.8011,0.8064
+252,743,2,bus,track_0252_rank_2_frame_00743_score_0.801.jpg,threshold,,,0.0,,-1,0.8011,0.8064
+252,651,3,bus,track_0252_rank_3_frame_00651_score_0.736.jpg,original,LDFILMSINDIACOM,LDFILMSINDIACOM,0.9644,,-1,0.7362,0.7342
+252,651,3,bus,track_0252_rank_3_frame_00651_score_0.736.jpg,upscaled,LDFILMSINDIACOM,LDFILMSINDIACOM,0.9699,,-1,0.7362,0.7342
+252,651,3,bus,track_0252_rank_3_frame_00651_score_0.736.jpg,clahe,LDFILMSINDIACOM,LDFILMSINDIACOM,0.9726,,-1,0.7362,0.7342
+252,651,3,bus,track_0252_rank_3_frame_00651_score_0.736.jpg,sharpened,LDFILMSINDIACOM,LDFILMSINDIACOM,0.9673,,-1,0.7362,0.7342
+252,651,3,bus,track_0252_rank_3_frame_00651_score_0.736.jpg,threshold,DFILMSINDIACOM,DFILMSINDIACOM,0.9661,,-1,0.7362,0.7342
+252,624,4,bus,track_0252_rank_4_frame_00624_score_0.726.jpg,original,DFILMSINDIACOM,DFILMSINDIACOM,0.9269,,-1,0.7261,0.7548
+252,624,4,bus,track_0252_rank_4_frame_00624_score_0.726.jpg,upscaled,DFILMSINDIACOM,DFILMSINDIACOM,0.9677,,-1,0.7261,0.7548
+252,624,4,bus,track_0252_rank_4_frame_00624_score_0.726.jpg,clahe,DFILMSINDIACOM,DFILMSINDIACOM,0.9606,,-1,0.7261,0.7548
+252,624,4,bus,track_0252_rank_4_frame_00624_score_0.726.jpg,sharpened,DFILMSINDIACOM,DFILMSINDIACOM,0.9552,,-1,0.7261,0.7548
+252,624,4,bus,track_0252_rank_4_frame_00624_score_0.726.jpg,threshold,FILMSINDIACOM,FILMSINDIACOM,0.9338,,-1,0.7261,0.7548
+252,661,5,bus,track_0252_rank_5_frame_00661_score_0.697.jpg,original,APIIZ | 3837,APIIZ3837,0.9607,AP11Z3837,2,0.6974,0.7926
+252,661,5,bus,track_0252_rank_5_frame_00661_score_0.697.jpg,upscaled,APIIZ | 3837,APIIZ3837,0.9629,AP11Z3837,2,0.6974,0.7926
+252,661,5,bus,track_0252_rank_5_frame_00661_score_0.697.jpg,clahe,APIIZ | 3837,APIIZ3837,0.9394,AP11Z3837,2,0.6974,0.7926
+252,661,5,bus,track_0252_rank_5_frame_00661_score_0.697.jpg,sharpened,APIIZ | 3837,APIIZ3837,0.9648,AP11Z3837,2,0.6974,0.7926
+252,661,5,bus,track_0252_rank_5_frame_00661_score_0.697.jpg,threshold,APIIZ | 3837,APIIZ3837,0.9643,AP11Z3837,2,0.6974,0.7926

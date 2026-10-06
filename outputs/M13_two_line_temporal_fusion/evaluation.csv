@@ -1,0 +1,4 @@
+track_id,ground_truth,prediction,status,exact_match
+108,AP31AE7144,AP31AE7144,NEEDS_REVIEW,True
+123,AP31AE7144,,REJECTED,False
+252,AP11Z3837,AP11Z3837,NEEDS_REVIEW,True

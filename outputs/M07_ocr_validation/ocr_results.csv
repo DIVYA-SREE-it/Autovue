@@ -1,0 +1,17 @@
+filename,ocr_text,ocr_confidence,preprocessing,format_valid,status
+track_0001_frame_00012_score_0.471.jpg,RQD,0.3216,threshold,False,REJECTED
+track_0002_frame_00013_score_0.448.jpg,,0.0,none,False,REJECTED
+track_0005_frame_00015_score_0.362.jpg,,0.0,none,False,REJECTED
+track_0010_frame_00040_score_0.300.jpg,,0.0,none,False,REJECTED
+track_0124_frame_00460_score_0.518.jpg,,0.0,none,False,REJECTED
+track_0129_frame_00519_score_0.645.jpg,3,0.9452,threshold,False,REJECTED
+track_0139_frame_00650_score_0.555.jpg,SQUHDKO,0.3135,original,False,REJECTED
+track_0182_frame_00465_score_0.480.jpg,,0.0,none,False,REJECTED
+track_0211_frame_00515_score_0.389.jpg,,0.0,none,False,REJECTED
+track_0214_frame_00521_score_0.543.jpg,35,0.096,threshold,False,REJECTED
+track_0215_frame_00523_score_0.461.jpg,,0.0,none,False,REJECTED
+track_0216_frame_00537_score_0.427.jpg,,0.0,none,False,REJECTED
+track_0297_frame_00813_score_0.580.jpg,,0.0,none,False,REJECTED
+track_0298_frame_00669_score_0.585.jpg,JQUWDHQAN,0.4898,threshold,False,REJECTED
+track_0334_frame_00729_score_0.413.jpg,QUHD,0.1789,sharpened,False,REJECTED
+track_0352_frame_00792_score_0.347.jpg,MLHMXL,0.0221,threshold,False,REJECTED
