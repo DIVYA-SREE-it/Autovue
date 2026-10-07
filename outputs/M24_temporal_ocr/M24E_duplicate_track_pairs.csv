@@ -1,0 +1,2 @@
+track_a,track_b,frame,vehicle_a,vehicle_b,filename_a,filename_b,md5,evidence
+108,123,294,motorcycle,motorcycle,track_0108_rank_3_frame_00294_score_0.742.jpg,track_0123_rank_2_frame_00294_score_0.750.jpg,d328bb68fe73d10af583016ec7af283f,EXACT_DUPLICATE_SAME_FRAME

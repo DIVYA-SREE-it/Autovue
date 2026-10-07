@@ -1,0 +1,57 @@
+M24E — CONSERVATIVE TRACK RE-ASSOCIATION
+============================================================
+
+Purpose
+-------
+Detect tracker identity fragmentation using duplicate
+saved observations.
+
+Merge rule
+----------
+Two track IDs are linked only when they contain:
+
+1. a crop from the SAME video frame
+2. byte-identical crop content
+3. different track IDs
+
+No OCR prediction is used.
+
+No registration ground truth is used.
+
+No known plate identity is used.
+
+This makes the re-association rule independent of the
+OCR evaluation labels.
+
+Results
+-------
+Duplicate cross-track observations found:
+1
+
+Merged track clusters:
+1
+
+Tracks participating in merged clusters:
+2
+
+Interpretation
+--------------
+A pixel-identical crop appearing under two different
+track IDs in the same frame is direct evidence that the
+tracker assigned multiple identities to the same saved
+observation.
+
+This can split OCR evidence across IDs and weaken
+temporal aggregation.
+
+Important
+---------
+This is an intentionally conservative re-association
+rule.
+
+It detects obvious fragmentation only.
+
+It does NOT attempt general vehicle re-identification.
+
+A broader appearance/trajectory-based re-ID system would
+require separate validation.
