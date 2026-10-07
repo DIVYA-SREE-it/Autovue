@@ -1,0 +1,83 @@
+M22A — INDIAN PLATE-AWARE PARSER
+============================================================
+
+Evaluation
+----------
+OCR DEV only
+
+Samples:
+26
+
+OCR engine:
+PaddleOCR raw predictions from M21C
+
+No OCR was rerun.
+
+No image preprocessing was added.
+
+No TEST data was used.
+
+Baseline
+--------
+Exact matches:
+2/26
+
+Exact accuracy:
+0.0769
+(7.69%)
+
+CER:
+0.6732
+(67.32%)
+
+After plate-aware parsing
+-------------------------
+Exact matches:
+6/26
+
+Exact accuracy:
+0.2308
+(23.08%)
+
+CER:
+0.6381
+(63.81%)
+
+Exact matches recovered:
+4
+
+Per-sample effect
+-----------------
+Improved but not exact:
+0
+
+Worse:
+0
+
+Unchanged:
+20
+
+Method
+------
+The parser searches the OCR output for plausible
+standard Indian registration substrings.
+
+Supported standard structures:
+
+AA00A0000
+AA00AA0000
+
+Candidate validation includes:
+- recognized Indian state/UT prefix
+- two district digits
+- one/two-letter series
+- four-digit registration number
+
+Limited OCR-confusion substitutions are permitted
+according to the expected letter/digit position.
+
+Important
+---------
+Rules do not contain any DEV ground-truth plate strings.
+
+OCR TEST remains untouched.
