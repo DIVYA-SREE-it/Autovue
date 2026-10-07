@@ -1,0 +1,15 @@
+track_id,rank,frame,filename,quality_score,m24a_plate,selected_variant,final_valid_plate,ocr_confidence,correction_cost,extra_preprocessing_latency_ms
+108,1,264,track_0108_rank_1_frame_00264_score_0.777.jpg,0.7772,,baseline,,0.882864,-1,310.405
+108,2,288,track_0108_rank_2_frame_00288_score_0.765.jpg,0.7652,,upscaled,AP31AE7144,0.893949,0,238.196
+108,3,294,track_0108_rank_3_frame_00294_score_0.742.jpg,0.7421,,baseline,,0.0,-1,128.116
+108,4,238,track_0108_rank_4_frame_00238_score_0.723.jpg,0.7235,,baseline,,0.987272,-1,334.589
+108,5,275,track_0108_rank_5_frame_00275_score_0.687.jpg,0.6867,,baseline,,0.654588,-1,136.112
+123,1,289,track_0123_rank_1_frame_00289_score_0.783.jpg,0.783,,baseline,,0.844729,-1,124.94
+123,2,294,track_0123_rank_2_frame_00294_score_0.750.jpg,0.7498,,baseline,,0.0,-1,118.386
+123,3,304,track_0123_rank_3_frame_00304_score_0.673.jpg,0.6729,,baseline,,0.0,-1,74.901
+150,1,339,track_0150_rank_1_frame_00339_score_0.616.jpg,0.6161,,baseline,,0.863484,-1,137.22
+252,1,748,track_0252_rank_1_frame_00748_score_0.820.jpg,0.8197,,baseline,,0.0,-1,1143.265
+252,2,743,track_0252_rank_2_frame_00743_score_0.801.jpg,0.8011,,baseline,,0.0,-1,1189.836
+252,3,651,track_0252_rank_3_frame_00651_score_0.736.jpg,0.7362,,baseline,,0.964399,-1,492.584
+252,4,624,track_0252_rank_4_frame_00624_score_0.726.jpg,0.7261,,baseline,,0.926881,-1,785.877
+252,5,661,track_0252_rank_5_frame_00661_score_0.697.jpg,0.6974,AP11Z3837,baseline,AP11Z3837,0.960659,2,0.0

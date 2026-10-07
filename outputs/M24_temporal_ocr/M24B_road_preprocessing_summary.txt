@@ -1,0 +1,69 @@
+M24B — ROAD-DOMAIN PREPROCESSING PILOT
+============================================================
+
+Purpose
+-------
+Test whether preprocessing that was rejected on the
+static OCR DEV benchmark can still help specifically on
+low-quality road-video crops.
+
+This does NOT modify the frozen static OCR pipeline.
+
+Road pilot
+----------
+Verified tracks:
+4
+
+Unique registration strings:
+2
+
+Candidate crops:
+14
+
+Baseline
+--------
+M24A temporal exact matches:
+
+1/4
+
+Road preprocessing rescue
+-------------------------
+Only frames without a parser-valid M24A plate were tested
+with:
+
+1. 3x bicubic upscale
+2. CLAHE
+3. sharpening
+4. Otsu thresholding
+
+Each resulting OCR string used the SAME Indian plate
+parser.
+
+Ground truth was NOT used for candidate selection.
+
+Frames receiving preprocessing search:
+
+13/14
+
+Frames where preprocessing created a valid plate:
+
+1
+
+Temporal result after road preprocessing:
+
+2/4
+
+Mean additional preprocessing latency averaged across all
+road crops:
+
+372.46 ms
+
+Interpretation rule
+-------------------
+This is an exploratory road-domain pilot.
+
+These four tracks are development/analysis tracks and
+must not be used to claim general road-video accuracy.
+
+Any road-specific method retained from this pilot must be
+evaluated later on a NEW unseen road video.

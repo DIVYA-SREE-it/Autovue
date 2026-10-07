@@ -1,0 +1,5 @@
+track_id,candidate_frames,final_plate,status,frame_support
+108,5,AP31AE7144,NEEDS_REVIEW,1
+123,3,,REJECTED,0
+150,1,,REJECTED,0
+252,5,AP11Z3837,NEEDS_REVIEW,1

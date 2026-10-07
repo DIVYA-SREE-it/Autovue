@@ -1,0 +1,5 @@
+track_id,ground_truth,m24a_prediction,m24a_exact,m24b_prediction,m24b_status,frame_support,m24b_exact
+108,AP31AE7144,,False,AP31AE7144,NEEDS_REVIEW,1,True
+123,AP31AE7144,,False,,REJECTED,0,False
+150,AP31AE7144,,False,,REJECTED,0,False
+252,AP11Z3837,AP11Z3837,True,AP11Z3837,NEEDS_REVIEW,1,True
