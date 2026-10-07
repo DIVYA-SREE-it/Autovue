@@ -1,0 +1,24 @@
+{
+  "frames": 91,
+  "visible_plates": 33,
+  "adapted_detector_boxes": 23,
+  "guaranteed_false_positives": 9,
+  "guaranteed_false_negatives_zero_detection": 18,
+  "optimistic_upper_bound": {
+    "tp": 14,
+    "fp": 9,
+    "fn": 19,
+    "precision": 0.608696,
+    "recall": 0.424242,
+    "f1": 0.5
+  },
+  "original_baseline": {
+    "tp": 16,
+    "fp": 3,
+    "fn": 17,
+    "precision": 0.8421,
+    "recall": 0.4848,
+    "f1": 0.6154
+  },
+  "adapted_model_rejected": true
+}

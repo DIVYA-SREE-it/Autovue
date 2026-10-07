@@ -1,0 +1,48 @@
+M19G1 — ADAPTED MODEL ROAD VALIDATION
+============================================================
+
+Model:
+/home/divya/projects/IndianANPR/experiments/domain_adaptation/yolo11n_m19_safe/weights/best.pt
+
+Evaluation source:
+traffic_ocr.mp4
+
+Training use:
+NONE
+
+Sampled frames:
+91
+
+Previously human-confirmed visible plates:
+33
+
+Detector configuration:
+Image size = 640
+Confidence = 0.4
+NMS IoU = 0.7
+
+Adapted-model detector boxes:
+23
+
+Frames with zero detections:
+69
+
+Frames requiring quick manual review:
+22
+
+False negatives already known from zero-detection frames:
+18
+
+Important:
+Only frames containing adapted-model detections require
+manual correctness checking.
+
+Frames with zero model detections are automatically:
+TP = 0
+FP = 0
+FN = visible real plates.
+
+Baseline traffic_ocr metrics:
+Precision = 0.8421
+Recall    = 0.4848
+F1        = 0.6154

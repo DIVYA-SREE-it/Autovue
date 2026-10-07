@@ -1,0 +1,96 @@
+M19G — DOMAIN-ADAPTATION ROAD VALIDATION
+============================================================
+
+Evaluation video
+----------------
+traffic_ocr.mp4
+
+Training use:
+NONE
+
+Reviewed/sample frames:
+91
+
+Human-confirmed visible plates:
+33
+
+Adapted-model detections:
+23
+
+Guaranteed errors
+-----------------
+False positives in frames containing zero real plates:
+9
+
+False negatives from zero-detection frames:
+18
+
+Optimistic adapted-model upper bound
+------------------------------------
+This assumes every remaining detection that could possibly
+correspond to a real plate is correct.
+
+TP <= 14
+FP >= 9
+FN >= 19
+
+Precision <= 0.6087
+Recall    <= 0.4242
+F1        <= 0.5000
+
+Original YOLO11n road-validation baseline
+-----------------------------------------
+TP = 16
+FP = 3
+FN = 17
+
+Precision = 0.8421
+Recall    = 0.4848
+F1        = 0.6154
+
+Decision
+--------
+Adapted model:
+REJECTED
+
+Reason:
+Even its mathematically optimistic upper-bound performance
+is below the original YOLO11n road-validation baseline.
+
+NPDS result
+-----------
+The conservative adaptation preserved NPDS performance well:
+
+Original:
+P = 0.9654
+R = 0.9672
+F1 = 0.9663
+mAP50-95 = 0.7109
+
+Adapted:
+P = 0.9613
+R = 0.9687
+F1 = 0.9650
+mAP50-95 = 0.6942
+
+Interpretation
+--------------
+Low-learning-rate fine-tuning prevented severe catastrophic
+forgetting, but the small 12-frame road adaptation set was
+insufficient for reliable cross-domain improvement.
+
+Final detector decision
+-----------------------
+Retain the original leakage-safe YOLO11n detector as the
+primary ANPR detector.
+
+The M19 adapted checkpoint is retained only as an
+experimental domain-adaptation result.
+
+Important methodology
+---------------------
+traffic_ocr.mp4 has now been used for model-selection
+evaluation and must NOT be described as the final road test.
+
+A new unseen road video should be used for the final
+end-to-end evaluation.
