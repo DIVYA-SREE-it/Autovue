@@ -1,0 +1,90 @@
+M23B — HELD-OUT OCR TEST EVALUATION
+============================================================
+
+Evaluation status
+-----------------
+ONE-TIME TEST EVALUATION
+
+Pipeline was frozen during M23A.
+
+No TEST result was used for method selection.
+
+Evaluation samples
+------------------
+Verified TEST plates:
+14
+
+Unverified/unreadable TEST samples:
+excluded from character-level scoring
+
+Frozen OCR pipeline
+-------------------
+PaddleOCR 3.7.0
+
+PP-OCRv5_server_det
+PP-OCRv5_server_rec
+
+0-degree OCR
++
+Indian registration parser
+
+If unresolved:
+adaptive 90 / 180 / 270 degree OCR
+
+Candidate ranking:
+1. lower correction cost
+2. fewer removed characters
+3. higher OCR confidence
+4. lower rotation angle on exact tie
+
+Results
+-------
+Exact matches:
+9/14
+
+Exact-match accuracy:
+0.6429
+(64.29%)
+
+Total GT characters:
+140
+
+Total edit distance:
+44
+
+Character Error Rate:
+0.3143
+(31.43%)
+
+Blank final predictions:
+0
+
+Blank prediction rate:
+0.0000
+(0.00%)
+
+Orientation behavior
+--------------------
+Orientation search triggered:
+8/14
+
+Rotated candidate selected:
+3/14
+
+Runtime
+-------
+Mean adaptive latency:
+122.58 ms
+
+Median adaptive latency:
+116.37 ms
+
+Research rule
+-------------
+THIS TEST RESULT IS FINAL FOR THE FROZEN OCR METHOD.
+
+The pipeline must not be modified based on these TEST
+predictions and then re-reported on the same TEST set.
+
+Any future method development requires a new development
+set or a new untouched evaluation set.
