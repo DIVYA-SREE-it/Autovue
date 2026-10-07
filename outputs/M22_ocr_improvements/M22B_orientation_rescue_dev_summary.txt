@@ -1,0 +1,89 @@
+M22B — ADAPTIVE ORIENTATION RESCUE
+============================================================
+
+Evaluation
+----------
+OCR DEV only
+
+Samples:
+26
+
+TEST used:
+NO
+
+Baseline
+--------
+M22A PaddleOCR + Indian plate parser
+
+Exact matches:
+6/26
+
+Exact accuracy:
+0.2308
+(23.08%)
+
+CER:
+0.6381
+(63.81%)
+
+Adaptive orientation strategy
+-----------------------------
+Run normal 0-degree OCR first.
+
+If a plausible Indian registration is found:
+STOP.
+
+If no plausible registration is found:
+try 90, 180 and 270 degree rotations.
+
+Valid rotated candidates are selected using:
+1. lower grammar correction cost
+2. fewer discarded characters
+3. higher OCR confidence
+4. lower rotation angle on exact tie
+
+Ground truth is NOT used for candidate selection.
+
+Results
+-------
+Exact matches:
+8/26
+
+Exact accuracy:
+0.3077
+(30.77%)
+
+CER:
+0.5331
+(53.31%)
+
+New exact matches recovered:
+2
+
+Improved but not exact:
+1
+
+Worse:
+0
+
+Orientation search triggered:
+20/26
+
+Runtime
+-------
+Mean additional orientation-search latency
+averaged across ALL DEV samples:
+
+80.60 ms
+
+Mean adaptive total latency per crop:
+
+119.58 ms
+
+Important
+---------
+Existing valid 0-degree parsed plates are preserved.
+
+Only unresolved samples receive additional rotation OCR.
+
+OCR TEST remains untouched.
