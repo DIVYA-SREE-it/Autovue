@@ -1,0 +1,102 @@
+M19F — YOLO11N DOMAIN ADAPTATION
+============================================================
+
+Training
+--------
+Source model:
+/home/divya/projects/IndianANPR/experiments/detector_benchmark/yolo11n/weights/best.pt
+
+Mixed training instances:
+2740
+
+NPDS samples:
+2500
+
+Road adaptation instances:
+240
+
+Unique road images:
+12
+
+Epochs:
+15
+
+Image size:
+640
+
+Batch:
+8
+
+Initial learning rate:
+0.0003
+
+Seed:
+42
+
+NPDS validation — before adaptation
+-----------------------------------
+Precision:
+0.9654
+
+Recall:
+0.9672
+
+F1:
+0.9663
+
+mAP50:
+0.9835
+
+mAP50-95:
+0.7109
+
+NPDS validation — after adaptation
+----------------------------------
+Precision:
+0.9613
+
+Recall:
+0.9687
+
+F1:
+0.9650
+
+mAP50:
+0.9826
+
+mAP50-95:
+0.6942
+
+Change
+------
+Precision:
+-0.0041
+
+Recall:
++0.0015
+
+F1:
+-0.0013
+
+mAP50:
+-0.0009
+
+mAP50-95:
+-0.0167
+
+Methodology
+-----------
+The NPDS test split was NOT used.
+
+traffic_baseline.mp4:
+Used for real-road adaptation.
+
+traffic_ocr.mp4:
+Not used during training.
+Reserved for road-domain validation.
+
+Next
+----
+Evaluate the adapted model on the same sampled
+traffic_ocr frames and compare real-road precision,
+recall and F1 against the M18 baseline.

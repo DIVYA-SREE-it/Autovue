@@ -1,0 +1,26 @@
+{
+  "training": {
+    "source_model": "/home/divya/projects/IndianANPR/experiments/detector_benchmark/yolo11n/weights/best.pt",
+    "dataset": "/home/divya/projects/IndianANPR/data/processed/m19_mixed_train/dataset.yaml",
+    "epochs": 15,
+    "imgsz": 640,
+    "batch": 8,
+    "lr0": 0.0003,
+    "seed": 42,
+    "best_model": "/home/divya/projects/IndianANPR/experiments/domain_adaptation/yolo11n_m19_safe/weights/best.pt"
+  },
+  "npds_validation_before": {
+    "precision": 0.9654,
+    "recall": 0.9672,
+    "f1": 0.9663,
+    "map50": 0.9835,
+    "map50_95": 0.7109
+  },
+  "npds_validation_after": {
+    "precision": 0.9613410316934177,
+    "recall": 0.9687184661957619,
+    "f1": 0.9650156492394004,
+    "map50": 0.9826320019065329,
+    "map50_95": 0.6941509034081976
+  }
+}
