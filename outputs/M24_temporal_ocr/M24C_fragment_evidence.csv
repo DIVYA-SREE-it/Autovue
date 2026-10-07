@@ -1,0 +1,2 @@
+track_id,candidate,candidate_frame_count,support_frame,source,raw_text,matching_fragment,fragment_length,required_length
+108,AP31AE7144,1,275,preprocess_clahe,31AE7144,31AE7144,8,6

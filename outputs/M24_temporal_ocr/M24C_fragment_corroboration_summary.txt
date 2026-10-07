@@ -1,0 +1,97 @@
+M24C — PARTIAL TEMPORAL CORROBORATION
+============================================================
+
+Purpose
+-------
+Test whether partial OCR evidence from independent video
+frames can corroborate an already complete parser-valid
+registration.
+
+IMPORTANT
+---------
+Fragments NEVER create or reconstruct a registration.
+
+A full parser-valid plate must already exist before
+fragment corroboration is considered.
+
+This prevents missing characters from being guessed.
+
+Road pilot
+----------
+Verified analysis tracks:
+4
+
+Unique registration strings:
+2
+
+Complete candidate tracks:
+2
+
+Exact complete candidates:
+2
+
+Corroboration rule
+------------------
+For each existing complete plate candidate:
+
+1. Ignore the frame(s) that produced the full plate.
+
+2. Inspect OCR strings from other frames of the SAME
+   vehicle track.
+
+3. Calculate the longest exact contiguous substring
+   shared with the complete candidate.
+
+4. Require the fragment to contain both letters and
+   digits.
+
+5. Require fragment length >= 60% of the full plate,
+   with an absolute minimum of 6 characters.
+
+Status
+------
+VERIFIED_FULL:
+At least two independent frames produced the complete
+valid plate.
+
+CORROBORATED_FRAGMENT:
+A complete plate exists on one frame and a sufficiently
+long exact fragment supports it on another frame.
+
+NEEDS_REVIEW:
+A complete valid plate exists but has no independent
+temporal corroboration.
+
+REJECTED:
+No complete parser-valid plate exists.
+
+Results
+-------
+VERIFIED_FULL:
+0
+
+CORROBORATED_FRAGMENT:
+1
+
+NEEDS_REVIEW:
+1
+
+REJECTED:
+2
+
+Exact candidates receiving fragment corroboration:
+1
+
+Research interpretation
+-----------------------
+This experiment evaluates temporal confidence, not
+general OCR accuracy.
+
+Partial fragments are used only as supporting evidence.
+
+They are never used to hallucinate or fill missing
+registration characters.
+
+The 60% / minimum-six-character rule is a development
+heuristic and must be validated on a NEW unseen road
+video before deployment use.
