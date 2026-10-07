@@ -49,3 +49,11 @@ Thumbs.db
 
 # Paddle downloaded models
 .paddlex/
+
+# Detector benchmark generated visuals / temporary runs
+experiments/detector_benchmark_smoke/
+experiments/detector_benchmark/*/*.png
+experiments/detector_benchmark/*/*.jpg
+
+# Incomplete RT-DETR full-training attempt
+experiments/detector_benchmark/rtdetr_l/

@@ -1,0 +1,23 @@
+{
+  "model": "yolo11n",
+  "pretrained_weights": "yolo11n.pt",
+  "split": "test",
+  "epochs_requested": 50,
+  "best_epoch": 49,
+  "imgsz": 640,
+  "batch": 8,
+  "seed": 42,
+  "precision": 0.95442,
+  "recall": 0.962066,
+  "f1": 0.958228,
+  "map50": 0.966642,
+  "map50_95": 0.699823,
+  "inference_ms_per_image": 3.6741,
+  "fps_theoretical": 272.17,
+  "parameters": 2624080,
+  "model_size_mb": 5.22,
+  "peak_reserved_vram_gb": 1.488,
+  "training_seconds": 9657.84,
+  "training_minutes": 160.96,
+  "best_weights": "/home/divya/projects/IndianANPR/experiments/detector_benchmark/yolo11n/weights/best.pt"
+}

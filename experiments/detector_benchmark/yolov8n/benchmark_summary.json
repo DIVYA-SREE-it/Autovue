@@ -1,0 +1,23 @@
+{
+  "model": "yolov8n",
+  "pretrained_weights": "yolov8n.pt",
+  "split": "test",
+  "epochs_requested": 50,
+  "best_epoch": 48,
+  "imgsz": 640,
+  "batch": 8,
+  "seed": 42,
+  "precision": 0.94241,
+  "recall": 0.958985,
+  "f1": 0.950625,
+  "map50": 0.962522,
+  "map50_95": 0.670734,
+  "inference_ms_per_image": 2.991,
+  "fps_theoretical": 334.34,
+  "parameters": 3157200,
+  "model_size_mb": 5.96,
+  "peak_reserved_vram_gb": 1.318,
+  "training_seconds": 9253.83,
+  "training_minutes": 154.23,
+  "best_weights": "/home/divya/projects/IndianANPR/experiments/detector_benchmark/yolov8n/weights/best.pt"
+}
