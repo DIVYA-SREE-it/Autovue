@@ -1,0 +1,83 @@
+M19E — MIXED DOMAIN-ADAPTATION DATASET
+============================================================
+
+Purpose
+-------
+Create a controlled fine-tuning dataset combining
+leakage-safe NPDS training examples with manually annotated
+real-road adaptation examples.
+
+Random seed:
+42
+
+NPDS source
+-----------
+Original leakage-safe training images:
+15429
+
+Selected NPDS training images:
+2500
+
+Selected NPDS plate boxes:
+2667
+
+Real-road adaptation source
+---------------------------
+Unique road images:
+12
+
+Unique road plate boxes:
+14
+
+Road repeat factor:
+20
+
+Effective road training instances:
+240
+
+Effective repeated road plate boxes:
+280
+
+Mixed training dataset
+----------------------
+Total training instances:
+2740
+
+Road-instance fraction:
+0.0876
+(8.76%)
+
+Generated image files:
+2740
+
+Generated label files:
+2740
+
+Hard-linked images:
+2740
+
+Copied images:
+0
+
+Validation
+----------
+Validation images remain the original leakage-safe NPDS
+validation split:
+
+/home/divya/projects/IndianANPR/data/processed/npds_leakage_safe/images/val
+
+Evaluation separation
+---------------------
+traffic_baseline.mp4:
+USED for domain adaptation.
+
+traffic_ocr.mp4:
+NOT used for training.
+Reserved for held-out real-road comparison.
+
+Important methodology
+---------------------
+The NPDS test split remains untouched.
+
+M19 fine-tuning/model selection will use NPDS validation
+plus the separately held-out traffic_ocr road evaluation.
