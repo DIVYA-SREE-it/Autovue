@@ -1,0 +1,47 @@
+M25B — FROZEN FINAL ROAD TRACKING CONFIGURATION
+============================================================
+
+Input:
+data/raw/final_road_eval/road_eval.mp4
+
+Input SHA256:
+52dda33eee82778cce81dddc6685e53752aea30e32d4f87f15751cbd8c25ac1e  data/raw/final_road_eval/road_eval.mp4
+
+Plate detector:
+experiments/detector_benchmark/yolo11n/weights/best.pt
+
+Detector SHA256:
+8cf63696ea17d84d4812352e8788a32528a4b2e25051f4180b7f6ef103e3e538  experiments/detector_benchmark/yolo11n/weights/best.pt
+
+Frozen configuration:
+vehicle_model=yolo11n.pt
+vehicle_classes=2,3,5,7
+vehicle_conf=0.30
+vehicle_imgsz=640
+tracker=botsort.yaml
+tracker_persist=true
+plate_conf=0.40
+plate_iou=0.70
+plate_imgsz=640
+min_plate_width=40
+min_plate_height=12
+min_aspect_ratio=1.2
+max_aspect_ratio=6.5
+top_k_candidates=5
+min_frame_gap=5
+
+Rule:
+Configuration frozen before first inference on M25 video.
+
+M25B script SHA256:
+6a15da83b22fea6ddbad0b76f369e4f57a3ec6af898ad911b63e89ffb90dbc6f  src/tracking/m25b_final_road_tracking.py
+
+Runtime reproducibility:
+python=3.12.3
+ultralytics=8.4.173
+torch=2.14.1+cu126
+opencv=5.0.0
+vehicle_model_path=/home/divya/projects/IndianANPR/yolo11n.pt
+vehicle_model_sha256=0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1
+botsort_path=/home/divya/projects/IndianANPR/.venv/lib/python3.12/site-packages/ultralytics/cfg/trackers/botsort.yaml
+botsort_sha256=8cd88930d3be5557be0777f384eecff0a36a7011850fe613fc0a68178bfd5b01
