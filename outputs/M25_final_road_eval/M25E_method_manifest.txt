@@ -1,0 +1,29 @@
+M25E — FROZEN FINAL TEMPORAL CONSENSUS
+============================================================
+
+Input frame predictions:
+370677ab3a3c383826757877d32526e5c0a15c2f8c2f5353c97f51668a7a3c27  outputs/M25_final_road_eval/M25D_frame_predictions.csv
+
+Input preprocessing observations:
+73f348d05c8d4e14a79acea07d7a2a62ab8889a4018cffc236c13faea23b47c6  outputs/M25_final_road_eval/M25D_preprocessing_candidates.csv
+
+Input cluster mapping:
+9efe491927fca1b21cf823a2fd2556d62941ff68d73c871e87889d2f8713a305  outputs/M25_final_road_eval/M25C_track_to_cluster.csv
+
+Frozen helper sources:
+b38df6191cd16f28bd56d598188d5fc54789452c67cfc060ff792bea1b004dc1  src/ocr/m22a_plate_aware_parser.py
+36affe5336f4438eedddfe92acf2ef33a38d3ff3e4b3c9448c4f6eaf5517c97b  src/ocr/m24c_fragment_corroboration.py
+f5729b641221004d3c348ff12e7c9d05262d4159757e020466a373fc6fa07d21  src/ocr/m24f_cluster_temporal_consensus.py
+
+M25E script:
+bd22cd8b9403a94b80ed18c6b3505aed1a2b158eea8274c4da1bf6a594d20000  src/ocr/m25e_final_temporal_consensus.py
+
+Rules:
+candidate_order=frame_support,confidence,correction_cost,quality
+fragment_ratio=0.60
+fragment_min_length=6
+fragment_must_be_mixed_alphanumeric=true
+fragment_must_be_independent_frame=true
+verified_full_min_complete_frames=2
+ocr_identity_cluster_merging=false
+ground_truth_used=false
