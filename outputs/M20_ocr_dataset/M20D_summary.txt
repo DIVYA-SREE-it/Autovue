@@ -1,0 +1,51 @@
+M20D — OCR BENCHMARK CROP SELECTION
+============================================================
+
+Purpose
+-------
+Create a manually transcribed OCR benchmark using
+ground-truth NPDS plate boxes.
+
+No OCR predictions were used for selection.
+
+Source separation
+-----------------
+OCR DEV:
+NPDS leakage-safe validation split
+
+OCR TEST:
+NPDS leakage-safe test split
+
+DEV samples:
+30
+
+TEST samples:
+15
+
+Total:
+45
+
+Source-ID rule
+--------------
+At most one selected image per original source ID.
+
+This prevents multiple Roboflow-derived versions of the
+same source image from appearing multiple times in the
+OCR benchmark.
+
+Selection criteria
+------------------
+Ground-truth plate crop
+Minimum crop width: 60 px
+Minimum crop height: 18 px
+Quality ranking combines:
+- crop size
+- Laplacian sharpness
+- grayscale contrast
+
+Evaluation rule
+---------------
+DEV may be used for OCR method development.
+
+TEST must remain untouched by OCR-method tuning and should
+only be evaluated after the OCR pipeline is finalized.
