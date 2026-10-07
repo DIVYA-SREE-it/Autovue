@@ -1,0 +1,30 @@
+M17C — YOLO11N NMS IoU SWEEP
+============================================================
+
+Objective:
+Select the NMS IoU threshold using the leakage-safe validation split.
+
+Controlled settings:
+Image size: 640
+Confidence floor: 0.001
+Batch: 8
+Test set: NOT USED
+
+Results:
+IoU=0.30 | mAP50=0.9839 | mAP50-95=0.6994 | F1*=0.9689
+IoU=0.50 | mAP50=0.9840 | mAP50-95=0.7032 | F1*=0.9682
+IoU=0.70 | mAP50=0.9835 | mAP50-95=0.7109 | F1*=0.9663
+IoU=0.80 | mAP50=0.9823 | mAP50-95=0.7137 | F1*=0.9595
+IoU=0.90 | mAP50=0.9732 | mAP50-95=0.7124 | F1*=0.9308
+
+Selected NMS IoU:
+0.80
+
+Selection rule:
+Highest validation mAP50-95; mAP50 and best-F1 used as tie-breakers.
+
+Important:
+P*, R* and F1* are curve-derived maximum-F1 summary values, not metrics at confidence 0.40.
+
+Next:
+Reconfirm the final confidence operating point using the selected NMS IoU.

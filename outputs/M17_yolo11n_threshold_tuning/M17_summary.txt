@@ -1,0 +1,104 @@
+M17 — YOLO11N DETECTOR OPTIMIZATION
+============================================================
+
+Purpose
+-------
+Optimize the selected YOLO11n detector using validation data only,
+without using the held-out test set for model or threshold selection.
+
+M17A — Resolution Sweep
+-----------------------
+640:
+mAP50-95 = 0.710806
+Inference = 5.1976 ms/image
+
+960:
+mAP50-95 = 0.657496
+Inference = 6.2187 ms/image
+
+1280:
+mAP50-95 = 0.594071
+Inference = 12.4550 ms/image
+
+Decision:
+Retain 640 x 640.
+
+Increasing inference resolution reduced localization performance
+and increased computational cost. The NPDS source images are
+already 640 x 640, so upscaling does not provide new visual detail.
+
+
+M17B — Confidence Analysis
+--------------------------
+A confidence-floor sensitivity experiment was performed first.
+Higher confidence floors progressively reduced AP because
+lower-confidence detections were removed from the PR curve.
+
+The full Precision / Recall / F1 confidence curves were then
+used for proper operating-point selection.
+
+Selected confidence curve point:
+Confidence = 0.4044
+Precision  = 0.9667
+Recall     = 0.9671
+F1         = 0.9669
+
+Practical deployment confidence:
+0.40
+
+
+M17C — NMS IoU Sweep
+--------------------
+IoU 0.30:
+mAP50-95 = 0.6994
+F1*      = 0.9689
+
+IoU 0.50:
+mAP50-95 = 0.7032
+F1*      = 0.9682
+
+IoU 0.70:
+mAP50-95 = 0.7109
+F1*      = 0.9663
+Recall*  = 0.9672
+
+IoU 0.80:
+mAP50-95 = 0.7137
+F1*      = 0.9595
+Recall*  = 0.9584
+
+IoU 0.90:
+mAP50-95 = 0.7124
+F1*      = 0.9308
+Recall*  = 0.9248
+
+Strict mAP50-95 winner:
+IoU = 0.80
+
+Final practical ANPR choice:
+IoU = 0.70
+
+Reason:
+IoU 0.80 improves mAP50-95 by only about 0.0028 over IoU 0.70,
+while reducing recall and F1. For an ANPR pipeline, missed plates
+are costly because they cannot proceed to OCR. A higher NMS
+threshold may also retain more overlapping duplicate detections.
+
+
+FINAL M17 DETECTOR CONFIGURATION
+--------------------------------
+Model           : YOLO11n
+Input resolution: 640 x 640
+Confidence      : 0.40
+NMS IoU         : 0.70
+
+Validation operating point:
+Precision       : 0.9667
+Recall          : 0.9671
+F1              : 0.9669
+
+Important methodology rule:
+The held-out test set was NOT used during M17 optimization.
+
+Next milestone:
+M18 — real-road detector evaluation on traffic videos.

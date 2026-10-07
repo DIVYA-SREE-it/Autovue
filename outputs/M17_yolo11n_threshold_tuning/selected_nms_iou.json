@@ -1,0 +1,7 @@
+{
+  "selected_nms_iou": 0.8,
+  "selection_metric": "validation mAP50-95",
+  "map50": 0.982259,
+  "map50_95": 0.713703,
+  "note": "Selected using validation data only. Test set was not used."
+}

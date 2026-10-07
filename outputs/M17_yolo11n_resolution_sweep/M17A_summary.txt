@@ -1,0 +1,64 @@
+M17A — YOLO11N INFERENCE RESOLUTION SWEEP
+============================================================
+
+Objective
+---------
+Determine whether increasing inference resolution improves
+the selected YOLO11n plate detector before attempting expensive
+higher-resolution retraining.
+
+Model
+-----
+YOLO11n best checkpoint from M15.
+
+Dataset
+-------
+IURS-NPDS leakage-safe validation split.
+
+Important:
+The test split was NOT used for optimization.
+
+Results
+-------
+Resolution: 640
+Precision: 0.965189
+Recall: 0.967205
+F1: 0.966196
+mAP50: 0.983518
+mAP50-95: 0.710806
+Inference: 5.1976 ms/image
+
+Resolution: 960
+Precision: 0.940703
+Recall: 0.968507
+F1: 0.954403
+mAP50: 0.971380
+mAP50-95: 0.657496
+Inference: 6.2187 ms/image
+
+Resolution: 1280
+Precision: 0.885036
+Recall: 0.932191
+F1: 0.908002
+mAP50: 0.934918
+mAP50-95: 0.594071
+Inference: 12.4550 ms/image
+
+Conclusion
+----------
+640 x 640 remains the preferred resolution.
+
+Increasing inference size did not improve localization performance.
+mAP50-95 decreased as resolution increased, while inference latency rose.
+
+A likely reason is that NPDS source images are already 640 x 640,
+so upscaling to 960 or 1280 does not create additional visual detail.
+The detector was also trained at 640, making 640 the matched
+train/inference operating point.
+
+Decision
+--------
+Do not perform expensive higher-resolution retraining at this stage.
+
+Next experiment:
+confidence / IoU operating-point analysis using the validation split.

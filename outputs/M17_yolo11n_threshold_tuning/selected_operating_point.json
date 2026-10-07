@@ -1,0 +1,8 @@
+{
+  "confidence": 0.4044044044044044,
+  "precision": 0.9667144784787175,
+  "recall": 0.9671262197028888,
+  "f1": 0.9669203052581246,
+  "minimum_recall_rule": 0.95,
+  "reason": "Highest F1 while maintaining recall >= 0.95."
+}

@@ -1,0 +1,31 @@
+M17B — YOLO11N CONFIDENCE THRESHOLD SWEEP
+============================================================
+
+Objective:
+Find a practical YOLO11n confidence threshold using the leakage-safe validation split.
+
+Controlled settings:
+Image size: 640
+NMS IoU: 0.70
+Batch: 8
+Test set: NOT USED
+
+Results:
+conf=0.05 | P=0.9654 | R=0.9672 | F1=0.9663 | mAP50=0.9835 | mAP50-95=0.7051
+conf=0.10 | P=0.9654 | R=0.9672 | F1=0.9663 | mAP50=0.9835 | mAP50-95=0.7040
+conf=0.20 | P=0.9654 | R=0.9672 | F1=0.9663 | mAP50=0.9749 | mAP50-95=0.6998
+conf=0.30 | P=0.9654 | R=0.9672 | F1=0.9663 | mAP50=0.9656 | mAP50-95=0.6941
+conf=0.40 | P=0.9657 | R=0.9672 | F1=0.9665 | mAP50=0.9560 | mAP50-95=0.6879
+conf=0.50 | P=0.9749 | R=0.9425 | F1=0.9584 | mAP50=0.9366 | mAP50-95=0.6757
+
+Selected operating point:
+Confidence = 0.40
+Precision = 0.9657
+Recall = 0.9672
+F1 = 0.9665
+
+Selection rule:
+Highest F1 among thresholds maintaining recall >= 0.95.
+
+Important methodology note:
+Confidence tuning is performed on validation data only. The held-out test set is not used to choose the threshold.

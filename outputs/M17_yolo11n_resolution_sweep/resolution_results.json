@@ -1,0 +1,32 @@
+[
+  {
+    "imgsz": 640,
+    "precision": 0.965189,
+    "recall": 0.967205,
+    "f1": 0.966196,
+    "map50": 0.983518,
+    "map50_95": 0.710806,
+    "inference_ms": 5.1976,
+    "fps_theoretical": 192.4
+  },
+  {
+    "imgsz": 960,
+    "precision": 0.940703,
+    "recall": 0.968507,
+    "f1": 0.954403,
+    "map50": 0.97138,
+    "map50_95": 0.657496,
+    "inference_ms": 6.2187,
+    "fps_theoretical": 160.81
+  },
+  {
+    "imgsz": 1280,
+    "precision": 0.885036,
+    "recall": 0.932191,
+    "f1": 0.908002,
+    "map50": 0.934918,
+    "map50_95": 0.594071,
+    "inference_ms": 12.455,
+    "fps_theoretical": 80.29
+  }
+]

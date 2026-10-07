@@ -1,0 +1,57 @@
+[
+  {
+    "nms_iou": 0.3,
+    "precision_at_best_f1": 0.963507,
+    "recall_at_best_f1": 0.974268,
+    "f1_best": 0.968858,
+    "map50": 0.983898,
+    "map50_95": 0.699437,
+    "preprocess_ms": 0.4452,
+    "inference_ms": 2.7692,
+    "postprocess_ms": 1.0968
+  },
+  {
+    "nms_iou": 0.5,
+    "precision_at_best_f1": 0.963674,
+    "recall_at_best_f1": 0.972755,
+    "f1_best": 0.968193,
+    "map50": 0.983985,
+    "map50_95": 0.703162,
+    "preprocess_ms": 0.4724,
+    "inference_ms": 2.7582,
+    "postprocess_ms": 1.1677
+  },
+  {
+    "nms_iou": 0.7,
+    "precision_at_best_f1": 0.965415,
+    "recall_at_best_f1": 0.967205,
+    "f1_best": 0.966309,
+    "map50": 0.983524,
+    "map50_95": 0.710859,
+    "preprocess_ms": 0.4738,
+    "inference_ms": 2.7736,
+    "postprocess_ms": 1.1176
+  },
+  {
+    "nms_iou": 0.8,
+    "precision_at_best_f1": 0.960558,
+    "recall_at_best_f1": 0.958428,
+    "f1_best": 0.959492,
+    "map50": 0.982259,
+    "map50_95": 0.713703,
+    "preprocess_ms": 0.509,
+    "inference_ms": 2.7851,
+    "postprocess_ms": 1.1076
+  },
+  {
+    "nms_iou": 0.9,
+    "precision_at_best_f1": 0.9368,
+    "recall_at_best_f1": 0.924823,
+    "f1_best": 0.930773,
+    "map50": 0.973246,
+    "map50_95": 0.712396,
+    "preprocess_ms": 0.488,
+    "inference_ms": 2.7882,
+    "postprocess_ms": 1.106
+  }
+]
