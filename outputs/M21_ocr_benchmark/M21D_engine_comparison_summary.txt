@@ -1,0 +1,85 @@
+M21D — OCR ENGINE COMPARISON
+============================================================
+
+Evaluation
+----------
+Split:
+DEV only
+
+Samples:
+26
+
+Ground truth:
+Manual VERIFIED plates only
+
+Raw baseline
+------------
+EasyOCR exact:
+0/26
+
+PaddleOCR exact:
+2/26
+
+Per-sample edit-distance comparison
+-----------------------------------
+PaddleOCR better:
+11
+
+EasyOCR better:
+8
+
+Tie:
+7
+
+Prediction behavior
+-------------------
+EasyOCR blanks:
+1
+
+PaddleOCR blanks:
+7
+
+EasyOCR predictions containing complete GT plus extra text:
+0
+
+PaddleOCR predictions containing complete GT plus extra text:
+6
+
+PaddleOCR diagnostic categories
+-------------------------------
+EXACT:
+2
+
+GT_WITH_EXTRA_TEXT:
+4
+
+NEAR_MATCH:
+1
+
+SAME_LENGTH_CHAR_ERRORS:
+2
+
+CHAR_ORDER_ERROR:
+1
+
+NO_TEXT:
+7
+
+MAJOR_ERROR:
+9
+
+Interpretation
+--------------
+PaddleOCR is currently the stronger raw OCR engine on DEV
+because it has lower total character error and produces
+the only exact matches.
+
+However, its high blank rate shows that raw OCR alone is
+not sufficient.
+
+Several PaddleOCR outputs preserve most or all plate
+characters but contain extra regional/emblem text or
+incorrect spatial ordering. These are candidates for
+plate-aware post-processing and orientation handling.
+
+No TEST samples were used.
