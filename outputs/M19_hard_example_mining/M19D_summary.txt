@@ -1,0 +1,30 @@
+M19D — ANNOTATION VALIDATION
+============================================================
+
+Adaptation images:
+12
+
+Expected plate boxes:
+14
+
+Actual plate boxes:
+14
+
+Structurally valid images:
+12
+
+Invalid images:
+0
+
+Missing/unreadable errors:
+0
+
+Overall structural validation:
+PASS
+
+Important:
+Structural validation confirms YOLO label syntax,
+box count and coordinate range.
+
+The contact sheet must still be visually inspected
+to confirm each box tightly covers a real plate.

@@ -1,0 +1,13 @@
+sample_id,expected_boxes,actual_boxes,valid,issues
+M18_0014,0,0,True,
+M18_0021,1,1,True,
+M18_0022,1,1,True,
+M18_0024,1,1,True,
+M18_0030,1,1,True,
+M18_0034,1,1,True,
+M18_0036,1,1,True,
+M18_0039,1,1,True,
+M18_0043,1,1,True,
+M18_0044,3,3,True,
+M18_0045,2,2,True,
+M18_0048,1,1,True,

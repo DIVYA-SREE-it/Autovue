@@ -1,0 +1,13 @@
+sample_id,video,timestamp_sec,visible_plates,false_positives,false_negatives,annotation_status
+M18_0014,traffic_baseline.mp4,6.506,0,1,0,negative_ready
+M18_0021,traffic_baseline.mp4,10.01,1,1,1,needs_plate_boxes
+M18_0022,traffic_baseline.mp4,10.511,1,1,1,needs_plate_boxes
+M18_0024,traffic_baseline.mp4,11.511,1,0,1,needs_plate_boxes
+M18_0030,traffic_baseline.mp4,14.514,1,0,1,needs_plate_boxes
+M18_0034,traffic_baseline.mp4,16.517,1,0,1,needs_plate_boxes
+M18_0036,traffic_baseline.mp4,17.484,1,1,1,needs_plate_boxes
+M18_0039,traffic_baseline.mp4,18.986,1,0,1,needs_plate_boxes
+M18_0043,traffic_baseline.mp4,20.988,1,1,0,needs_plate_boxes
+M18_0044,traffic_baseline.mp4,21.488,3,0,3,needs_plate_boxes
+M18_0045,traffic_baseline.mp4,21.989,2,0,1,needs_plate_boxes
+M18_0048,traffic_baseline.mp4,23.49,1,0,1,needs_plate_boxes
