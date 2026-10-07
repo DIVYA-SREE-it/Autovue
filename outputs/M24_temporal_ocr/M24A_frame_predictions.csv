@@ -1,0 +1,15 @@
+track_id,rank,frame,filename,quality_score,raw_0,final_output,valid_plate,selected_rotation,ocr_confidence,correction_cost,latency_ms
+108,1,264,track_0108_rank_1_frame_00264_score_0.777.jpg,0.7772,WWILE,WWILE,,0,0.882864,-1,120.335
+108,2,288,track_0108_rank_2_frame_00288_score_0.765.jpg,0.7652,AE7144,AE7144,,0,0.996169,-1,132.295
+108,3,294,track_0108_rank_3_frame_00294_score_0.742.jpg,0.7421,,,,0,0.0,-1,117.696
+108,4,238,track_0108_rank_4_frame_00238_score_0.723.jpg,0.7235,INDIACO,INDIACO,,0,0.987272,-1,245.058
+108,5,275,track_0108_rank_5_frame_00275_score_0.687.jpg,0.6867,IPSHAE7144,IPSHAE7144,,0,0.654588,-1,192.144
+123,1,289,track_0123_rank_1_frame_00289_score_0.783.jpg,0.783,VANROAE7144,VANROAE7144,,0,0.844729,-1,105.031
+123,2,294,track_0123_rank_2_frame_00294_score_0.750.jpg,0.7498,,,,0,0.0,-1,64.771
+123,3,304,track_0123_rank_3_frame_00304_score_0.673.jpg,0.6729,,,,0,0.0,-1,42.25
+150,1,339,track_0150_rank_1_frame_00339_score_0.616.jpg,0.6161,PAE7144,PAE7144,,0,0.863484,-1,95.527
+252,1,748,track_0252_rank_1_frame_00748_score_0.820.jpg,0.8197,,,,0,0.0,-1,152.558
+252,2,743,track_0252_rank_2_frame_00743_score_0.801.jpg,0.8011,,,,0,0.0,-1,149.159
+252,3,651,track_0252_rank_3_frame_00651_score_0.736.jpg,0.7362,LDFILMSINDIACOM,LDFILMSINDIACOM,,0,0.964399,-1,203.741
+252,4,624,track_0252_rank_4_frame_00624_score_0.726.jpg,0.7261,DFILMSINDIACOM,DFILMSINDIACOM,,0,0.926881,-1,175.335
+252,5,661,track_0252_rank_5_frame_00661_score_0.697.jpg,0.6974,APIIZ3837,AP11Z3837,AP11Z3837,0,0.960659,2,46.556

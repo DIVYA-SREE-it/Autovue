@@ -1,0 +1,83 @@
+M24A — ROAD-TRACK TEMPORAL OCR PILOT
+============================================================
+
+Purpose
+-------
+Evaluate whether multiple OCR observations from the same
+tracked road vehicle provide more reliable plate
+recognition than using only the highest-ranked single crop.
+
+This is a PILOT experiment.
+
+Ground truth
+------------
+Manually VERIFIED tracks:
+4
+
+Unique registration strings:
+2
+
+Verified tracks:
+108, 123, 150, 252
+
+This small set is NOT sufficient for a general road OCR
+accuracy claim.
+
+OCR method
+----------
+The frozen M23 static OCR pipeline was used independently
+on every crop:
+
+PaddleOCR
++
+Indian plate parser
++
+adaptive orientation rescue
+
+No static OCR TEST images were reused.
+
+Temporal voting
+---------------
+Only parser-validated Indian registrations participate in
+temporal voting.
+
+Votes are based on distinct video frames.
+
+Candidate selection priority:
+
+1. more distinct-frame support
+2. higher mean OCR confidence
+3. lower mean grammar correction cost
+4. higher mean crop quality
+
+Status rule:
+
+>= 2 supporting frames
+    VERIFIED
+
+1 supporting frame
+    NEEDS_REVIEW
+
+0 valid frames
+    REJECTED
+
+Pilot comparison
+----------------
+Rank-1 single-frame exact matches:
+
+0/4
+
+Temporal-consensus exact matches:
+
+1/4
+
+Important
+---------
+Do NOT convert these counts into a general road-video OCR
+accuracy percentage.
+
+Three tracks share registration AP31AE7144, so the four
+tracks represent only two unique plate strings.
+
+This experiment is intended to study temporal behavior,
+not estimate deployment accuracy.
