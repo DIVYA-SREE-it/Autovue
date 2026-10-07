@@ -1,0 +1,95 @@
+M22C — ADAPTIVE PREPROCESSING RESCUE
+============================================================
+
+Evaluation
+----------
+OCR DEV only
+
+Samples:
+26
+
+TEST used:
+NO
+
+Baseline
+--------
+M22A PaddleOCR + Indian plate parser
+
+Exact matches:
+6/26
+
+Exact accuracy:
+0.2308
+(23.08%)
+
+CER:
+0.6381
+(63.81%)
+
+Preprocessing strategy
+----------------------
+Normal raw OCR is preserved when it already yields a
+plausible Indian registration.
+
+Only unresolved samples are tested with:
+
+1. 3x bicubic upscale
+2. CLAHE
+3. sharpening
+4. Otsu thresholding
+
+Each OCR output is passed through the same Indian
+registration parser.
+
+Candidate selection uses:
+
+1. lower grammar correction cost
+2. fewer discarded OCR characters
+3. higher OCR confidence
+4. fixed variant priority on exact ties
+
+Ground truth is NOT used for candidate selection.
+
+Results
+-------
+Exact matches:
+6/26
+
+Exact accuracy:
+0.2308
+(23.08%)
+
+CER:
+0.6381
+(63.81%)
+
+New exact matches recovered:
+0
+
+Improved but not exact:
+0
+
+Worse:
+0
+
+Preprocessing search triggered:
+20/26
+
+Runtime
+-------
+Mean additional preprocessing latency
+averaged across ALL DEV samples:
+
+211.94 ms
+
+Mean adaptive total latency per crop:
+
+250.91 ms
+
+Important
+---------
+M22C is an independent ablation from M22B.
+
+Rotations are NOT used in this experiment.
+
+OCR TEST remains untouched.
