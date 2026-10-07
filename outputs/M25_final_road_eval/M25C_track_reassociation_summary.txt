@@ -1,0 +1,40 @@
+M25C — FROZEN CONSERVATIVE TRACK RE-ASSOCIATION
+============================================================
+
+Input tracker IDs:
+45
+
+Conservative track clusters:
+43
+
+Exact duplicate cross-track observations:
+2
+
+Merged clusters:
+1
+
+Tracker IDs participating in merges:
+3
+
+Frozen rule
+-----------
+Two tracker IDs are connected only when:
+
+1. they contain a saved crop from the SAME video frame
+2. the saved crop files are byte-identical
+3. the tracker IDs are different
+
+No OCR prediction is used.
+
+No plate ground truth is used.
+
+No registration identity is used.
+
+Purpose
+-------
+This applies the same conservative identity-fragmentation
+logic developed in M24E to the unseen M25 road video.
+
+It can recover only obvious duplicate tracker identities.
+
+It is NOT a general vehicle re-identification algorithm.
