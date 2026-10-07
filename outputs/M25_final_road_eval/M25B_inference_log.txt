@@ -1,0 +1,27 @@
+=================================================================
+INDIAN ANPR - TRACKING + BEST PLATE SELECTION
+=================================================================
+GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+Loading vehicle tracker...
+Loading plate detector...
+Frame 100/727 | plate tracks=12
+Frame 200/727 | plate tracks=18
+Frame 300/727 | plate tracks=24
+Frame 400/727 | plate tracks=35
+Frame 500/727 | plate tracks=38
+Frame 600/727 | plate tracks=41
+Frame 700/727 | plate tracks=43
+
+Saving best plate crops...
+
+=================================================================
+TRACKING COMPLETE
+=================================================================
+Vehicle tracks with candidates: 45
+
+Output video: /home/divya/projects/IndianANPR/outputs/M25_final_road_eval/M25B_tracking/tracking_best_plate.mp4
+Best crops: /home/divya/projects/IndianANPR/outputs/M25_final_road_eval/M25B_tracking/best_plate_crops
+Summary: /home/divya/projects/IndianANPR/outputs/M25_final_road_eval/M25B_tracking/track_summary.csv
+
+M25B wall time: 86.88 seconds
+M25B max RAM: 1583380 KB

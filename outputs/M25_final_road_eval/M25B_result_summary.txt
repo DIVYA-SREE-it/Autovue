@@ -1,0 +1,16 @@
+M25B — FINAL UNSEEN ROAD TRACKING RESULT
+============================================================
+
+Input frames: 727
+Input duration_seconds: 24.233333
+Tracks_with_plate_candidates: 45
+Saved_topK_plate_crops: 92
+Wall_time_seconds: 86.88
+Peak_RAM_KB: 1583380
+
+Track summary SHA256:
+a3c30c2081f5e8d98283a899741e305f01aa97f02cdb999e0a7bb9fbb79de694  outputs/M25_final_road_eval/M25B_tracking/track_summary.csv
+
+Interpretation:
+Tracker IDs are NOT assumed to equal unique physical vehicles.
+Identity fragmentation is evaluated separately before OCR.
