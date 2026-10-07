@@ -1,0 +1,26 @@
+M25D — FROZEN FINAL ROAD OCR CONFIGURATION
+============================================================
+
+Input track summary:
+a3c30c2081f5e8d98283a899741e305f01aa97f02cdb999e0a7bb9fbb79de694  outputs/M25_final_road_eval/M25B_tracking/track_summary.csv
+
+Input cluster mapping:
+9efe491927fca1b21cf823a2fd2556d62941ff68d73c871e87889d2f8713a305  outputs/M25_final_road_eval/M25C_track_to_cluster.csv
+
+Frozen OCR sources:
+0b85e0b81b369f002c2bd771f3670edbaa66f921a8b2cf8f5bc14a0f4a0407bb  src/ocr/m21_paddleocr_dev.py
+b38df6191cd16f28bd56d598188d5fc54789452c67cfc060ff792bea1b004dc1  src/ocr/m22a_plate_aware_parser.py
+cf3c5f6ea78a4a9667a6dc4979810063e1abb1f242d4c85aeae6063c29eec21b  src/ocr/m22c_preprocessing_rescue.py
+eb4e1a35ca0bba9aee7da08226676a5f9195c9f15257e2b5c243d63d1ceae3f0  src/ocr/m23b_test_evaluation.py
+
+M25D script:
+a1066bfce82f59a71d12187713ae76c198478253a12c537ff1cea52dfb36a7bf  src/ocr/m25d_final_road_ocr.py
+
+Pipeline:
+0deg PaddleOCR
+Indian registration parser
+90/180/270 rescue only when unresolved
+road preprocessing fallback only when still unresolved
+preprocessing=upscaled,clahe,sharpened,threshold
+no_ground_truth=true
+no_parameter_tuning=true
