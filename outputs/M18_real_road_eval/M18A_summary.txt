@@ -1,0 +1,27 @@
+M18A — REAL-ROAD DETECTOR REVIEW SET
+============================================================
+
+Purpose:
+Evaluate the finalized YOLO11n detector outside the NPDS benchmark using actual 1080p road traffic videos.
+
+Detector configuration:
+YOLO11n
+Image size: 640
+Confidence: 0.40
+NMS IoU: 0.70
+
+Sampling frequency: 2.0 frames/second
+
+Videos:
+traffic_baseline.mp4 | 27.36s | 55 samples | 8 detector boxes
+traffic_ocr.mp4 | 45.44s | 91 samples | 19 detector boxes
+
+Total sampled frames: 146
+Total detector boxes: 27
+
+Important methodology:
+These road videos do not yet have formal ground-truth bounding boxes.
+Therefore M18 uses human-reviewed TP/FP/FN rather than claiming mAP on unlabeled video.
+
+Next:
+Manually review raw and detected frames, record TP/FP/FN and categorize failure modes.

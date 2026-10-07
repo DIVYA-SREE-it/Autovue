@@ -1,0 +1,32 @@
+{
+  "configuration": {
+    "model": "YOLO11n",
+    "imgsz": 640,
+    "confidence": 0.4,
+    "nms_iou": 0.7,
+    "sample_rate_hz": 2.0,
+    "evaluation_type": "human-reviewed real-road robustness audit"
+  },
+  "videos": [
+    {
+      "video": "traffic_baseline.mp4",
+      "resolution": "1920x1080",
+      "fps": 29.97,
+      "total_frames": 820,
+      "duration_sec": 27.361,
+      "sampled_frames": 55,
+      "detections": 8
+    },
+    {
+      "video": "traffic_ocr.mp4",
+      "resolution": "1920x1080",
+      "fps": 25.0,
+      "total_frames": 1136,
+      "duration_sec": 45.44,
+      "sampled_frames": 91,
+      "detections": 19
+    }
+  ],
+  "total_sampled_frames": 146,
+  "total_detector_boxes": 27
+}

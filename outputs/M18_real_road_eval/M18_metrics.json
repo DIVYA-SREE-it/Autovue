@@ -1,0 +1,15 @@
+{
+  "total_sampled_frames": 146,
+  "reviewed_frames": 146,
+  "metric_frames": 146,
+  "review_coverage_percent": 100.0,
+  "visible_real_plates": 57,
+  "detector_boxes": 27,
+  "true_positives": 19,
+  "false_positives": 8,
+  "false_negatives": 38,
+  "precision": 0.703704,
+  "recall": 0.333333,
+  "f1": 0.452381,
+  "frames_with_errors": 38
+}
