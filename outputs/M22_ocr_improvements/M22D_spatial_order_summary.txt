@@ -1,0 +1,80 @@
+M22D — TWO-LINE SPATIAL-ORDER RESCUE
+============================================================
+
+Evaluation
+----------
+OCR DEV only
+
+Samples:
+26
+
+TEST used:
+NO
+
+Baseline
+--------
+M22A PaddleOCR + Indian plate parser
+
+Exact matches:
+6/26
+
+Exact accuracy:
+0.2308
+(23.08%)
+
+CER:
+0.6381
+(63.81%)
+
+Spatial-order method
+--------------------
+For unresolved samples, PaddleOCR text regions are grouped
+into visual rows.
+
+Two reading orders are examined:
+
+1. top-to-bottom
+2. bottom-to-top
+
+A reversed order is accepted only when:
+
+- normal order does NOT yield a plausible Indian plate
+- reversed order DOES yield a plausible Indian plate
+
+Ground truth is NOT used for candidate selection.
+
+Results
+-------
+Exact matches:
+6/26
+
+Exact accuracy:
+0.2308
+(23.08%)
+
+CER:
+0.6381
+(63.81%)
+
+New exact matches recovered:
+0
+
+Improved but not exact:
+0
+
+Worse:
+0
+
+Spatial-order inspection triggered:
+20/26
+
+Deployment note
+---------------
+This DEV script reruns PaddleOCR because M21C did not
+persist individual OCR region text.
+
+In the final pipeline, both row orders can be generated
+from the SAME initial OCR result, so no additional model
+inference is required.
+
+OCR TEST remains untouched.
