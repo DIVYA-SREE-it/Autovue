@@ -1,0 +1,23 @@
+M25A — FINAL UNSEEN ROAD EVALUATION INPUT
+============================================================
+
+File:
+data/raw/final_road_eval/road_eval.mp4
+
+SHA256:
+52dda33eee82778cce81dddc6685e53752aea30e32d4f87f15751cbd8c25ac1e  data/raw/final_road_eval/road_eval.mp4
+
+FFPROBE:
+codec_name=h264
+width=768
+height=432
+r_frame_rate=30/1
+avg_frame_rate=30/1
+nb_frames=727
+duration=24.233333
+size=8178992
+bit_rate=2700079
+
+Evaluation rule:
+This video was selected before final model inference.
+It must not be replaced based on prediction performance.
