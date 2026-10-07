@@ -1,0 +1,251 @@
+M23C — FINAL STATIC OCR STUDY
+============================================================
+
+Purpose
+-------
+Evaluate OCR recognition on manually transcribed Indian
+number-plate crops.
+
+This study evaluates OCR recognition only.
+
+It does NOT represent complete ANPR performance because
+the benchmark uses ground-truth plate crops rather than
+detections produced by the full road-video pipeline.
+
+
+DATASET
+-------
+OCR DEV:
+
+Verified readable plates:
+26
+
+OCR TEST:
+
+Verified readable plates:
+14
+
+TEST was not used for OCR method selection.
+
+
+OCR ENGINE COMPARISON — DEV
+---------------------------
+EasyOCR raw:
+
+Exact accuracy:
+0.0%
+
+CER:
+77.43%
+
+
+PaddleOCR raw:
+
+Exact accuracy:
+7.69%
+
+CER:
+67.32%
+
+
+PaddleOCR was selected as the primary OCR engine.
+
+
+DEV ABLATION
+------------
+Raw PaddleOCR:
+
+Exact:
+2/26
+
+Accuracy:
+7.69%
+
+CER:
+67.32%
+
+
++ Indian registration parser:
+
+Exact:
+6/26
+
+Accuracy:
+23.08%
+
+CER:
+63.81%
+
+
++ adaptive orientation rescue:
+
+Exact:
+8/26
+
+Accuracy:
+30.77%
+
+CER:
+53.31%
+
+Mean latency:
+119.58 ms
+
+
+REJECTED DEV EXPERIMENTS
+------------------------
+Generic preprocessing:
+
+Accuracy:
+23.08%
+
+CER:
+63.81%
+
+Mean latency:
+250.91 ms
+
+Decision:
+REJECTED because it produced no recognition improvement
+while greatly increasing runtime.
+
+
+Spatial-order rescue:
+
+Accuracy:
+23.08%
+
+CER:
+63.81%
+
+Decision:
+REJECTED because it produced no DEV improvement.
+
+
+FROZEN PIPELINE
+---------------
+PaddleOCR
++
+Indian registration parser
++
+adaptive orientation rescue
+
+The method was frozen before TEST evaluation.
+
+
+HELD-OUT TEST RESULT
+--------------------
+Exact matches:
+
+9/14
+
+Exact accuracy:
+
+64.29%
+
+Character Error Rate:
+
+31.43%
+
+Mean adaptive latency:
+
+122.58 ms
+
+Orientation search triggered:
+
+8/14
+
+Rotated candidate selected:
+
+3/14
+
+
+TEST ORIENTATION CONTRIBUTION
+-----------------------------
+Correct directly at raw 0-degree OCR:
+
+6/14
+
+Correct after complete frozen pipeline:
+
+9/14
+
+Additional exact TEST plates obtained by the frozen
+pipeline relative to raw 0-degree OCR:
+
+3
+
+
+DEV VS TEST
+-----------
+DEV exact accuracy:
+
+30.77%
+
+TEST exact accuracy:
+
+64.29%
+
+
+DEV CER:
+
+53.31%
+
+TEST CER:
+
+31.43%
+
+
+Interpretation:
+
+TEST performance is higher than DEV performance.
+
+This should not be interpreted as evidence that the model
+improved after freezing.
+
+The most likely explanation is different sample
+difficulty together with the small benchmark size.
+
+Both DEV and TEST results should therefore be reported.
+
+
+RESEARCH LIMITATIONS
+--------------------
+1. OCR TEST contains only 14 verified readable crops.
+
+2. Static OCR uses ground-truth plate crops.
+
+3. These results do not include plate-detector recall,
+   vehicle tracking errors or road-video degradation.
+
+4. TEST results must not be used to retune this frozen
+   method and then be re-reported on the same TEST set.
+
+5. Full ANPR performance requires separate road-video
+   end-to-end evaluation.
+
+
+FINAL STATIC-OCR CONCLUSION
+---------------------------
+PaddleOCR performed better than EasyOCR on the DEV
+benchmark.
+
+Indian-registration-aware parsing substantially improved
+exact plate recognition.
+
+Adaptive orientation handling provided further gains.
+
+Generic preprocessing and the tested spatial-order rescue
+were not beneficial.
+
+The frozen OCR pipeline achieved:
+
+9/14
+(64.29%)
+
+exact plate recognition on the held-out static OCR TEST
+benchmark, with:
+
+31.43%
+
+character error rate.

@@ -1,0 +1,3 @@
+split,verified_samples,exact_matches,exact_accuracy_pct,cer_pct,mean_latency_ms,rotated_candidate_selected
+DEV,26,8,30.77,53.31,119.58,3
+TEST,14,9,64.29,31.43,122.58,3
