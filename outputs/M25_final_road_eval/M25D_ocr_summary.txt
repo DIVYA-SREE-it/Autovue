@@ -1,0 +1,99 @@
+M25D — FROZEN OCR ON UNSEEN ROAD VIDEO
+============================================================
+
+Purpose
+-------
+Apply the already-developed OCR pipeline to the frozen
+M25B road crops.
+
+Ground truth used:
+NO
+
+OCR crops:
+92
+
+Raw tracker IDs:
+45
+
+Conservative M25C clusters:
+43
+
+Frozen static OCR
+-----------------
+PaddleOCR:
+PP-OCRv5_server_det
+PP-OCRv5_server_rec
+
+Document orientation classifier:
+disabled
+
+Document unwarping:
+disabled
+
+Text-line orientation:
+disabled
+
+Device:
+gpu:0
+
+Static method:
+0-degree OCR
+-> Indian registration parser
+-> adaptive 90/180/270-degree rescue when unresolved
+
+Orientation rescue triggered:
+83
+
+Rotated candidate selected:
+0
+
+Parser-valid crops after static/orientation stage:
+9
+
+Road fallback
+-------------
+Only unresolved crops were tested with the previously
+developed M24B road fallback:
+
+1. 3x bicubic upscale
+2. CLAHE
+3. sharpening
+4. Otsu thresholding
+
+Preprocessing fallback triggered:
+83
+
+Crops rescued by preprocessing:
+6
+
+Final parser-valid crops:
+15
+
+Clusters containing >=1 parser-valid candidate:
+8
+
+Unique parser-valid candidate strings:
+7
+
+Timing
+------
+Warmup/model initialization excluded.
+
+Mean adaptive OCR latency per crop:
+151.79 ms
+
+Median adaptive OCR latency per crop:
+162.93 ms
+
+Important
+---------
+These are prediction counts, NOT accuracy.
+
+No ground truth was used in this stage.
+
+No OCR threshold, parser rule, orientation rule,
+preprocessing variant, or candidate-ranking rule was
+changed after viewing M25 predictions.
+
+Temporal consensus and fragment corroboration are
+evaluated separately in the next milestone.

@@ -1,0 +1,25 @@
+M25D — FINAL UNSEEN ROAD OCR RESULT
+============================================================
+
+OCR_crops=92
+raw_tracker_ids=45
+conservative_clusters=43
+orientation_triggered=83
+orientation_selected=0
+static_parser_valid_crops=9
+preprocessing_rescues=6
+final_parser_valid_crops=15
+clusters_with_candidate=8
+unique_candidate_strings=7
+mean_adaptive_latency_ms=151.79
+median_adaptive_latency_ms=162.93
+wall_time_seconds=25.94
+peak_RAM_KB=1868512
+
+Frame predictions SHA256:
+370677ab3a3c383826757877d32526e5c0a15c2f8c2f5353c97f51668a7a3c27  outputs/M25_final_road_eval/M25D_frame_predictions.csv
+
+Interpretation:
+Prediction counts are not accuracy.
+Ground truth was not used.
+Temporal consensus has not yet been applied.

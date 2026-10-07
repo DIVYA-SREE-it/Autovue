@@ -1,0 +1,123 @@
+/home/divya/projects/IndianANPR/.venv_paddleocr/lib/python3.12/site-packages/paddle/utils/cpp_extension/extension_utils.py:718: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+[32mCreating model: ('PP-OCRv5_server_det', None, None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/home/divya/.paddlex/official_models/PP-OCRv5_server_det`.[0m
+[32mCreating model: ('PP-OCRv5_server_rec', None, None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/home/divya/.paddlex/official_models/PP-OCRv5_server_rec`.[0m
+========================================================================
+M25D — FROZEN OCR ON UNSEEN ROAD VIDEO
+========================================================================
+Plate crops: 92
+Tracker IDs: 45
+Conservative clusters: 43
+
+Loading frozen PaddleOCR configuration...
+Running 3 untimed warmups...
+[01/92] track=4 cluster=4 frame=22 rank=1 rot=0 variant=baseline plate=NONE
+[02/92] track=4 cluster=4 frame=78 rank=2 rot=0 variant=baseline plate=NONE
+[03/92] track=4 cluster=4 frame=27 rank=3 rot=0 variant=baseline plate=NONE
+[04/92] track=4 cluster=4 frame=48 rank=4 rot=0 variant=baseline plate=NONE
+[05/92] track=4 cluster=4 frame=35 rank=5 rot=0 variant=threshold plate=DL01J0968
+[06/92] track=15 cluster=15 frame=22 rank=1 rot=0 variant=baseline plate=NONE
+[07/92] track=21 cluster=21 frame=40 rank=1 rot=0 variant=baseline plate=NONE
+[08/92] track=1 cluster=1 frame=70 rank=1 rot=0 variant=baseline plate=NONE
+[09/92] track=1 cluster=1 frame=61 rank=2 rot=0 variant=baseline plate=NONE
+[10/92] track=29 cluster=29 frame=79 rank=1 rot=0 variant=baseline plate=NONE
+[11/92] track=29 cluster=29 frame=121 rank=2 rot=0 variant=baseline plate=NONE
+[12/92] track=29 cluster=29 frame=113 rank=3 rot=0 variant=baseline plate=NONE
+[13/92] track=29 cluster=29 frame=70 rank=4 rot=0 variant=baseline plate=NONE
+[14/92] track=30 cluster=30 frame=67 rank=1 rot=0 variant=baseline plate=NONE
+[15/92] track=34 cluster=34 frame=83 rank=1 rot=0 variant=baseline plate=NONE
+[16/92] track=26 cluster=26 frame=88 rank=1 rot=0 variant=baseline plate=NONE
+[17/92] track=26 cluster=26 frame=99 rank=2 rot=0 variant=baseline plate=NONE
+[18/92] track=26 cluster=26 frame=93 rank=3 rot=0 variant=upscaled plate=DL10CY1530
+[19/92] track=26 cluster=26 frame=142 rank=4 rot=0 variant=baseline plate=DL10CY1530
+[20/92] track=26 cluster=26 frame=150 rank=5 rot=0 variant=baseline plate=DL10CY1530
+[21/92] track=36 cluster=36 frame=89 rank=1 rot=0 variant=baseline plate=NONE
+[22/92] track=37 cluster=37 frame=94 rank=1 rot=0 variant=baseline plate=NONE
+[23/92] track=7 cluster=7 frame=100 rank=1 rot=0 variant=baseline plate=NONE
+[24/92] track=7 cluster=7 frame=457 rank=2 rot=0 variant=baseline plate=HR12AL2029
+[25/92] track=35 cluster=35 frame=101 rank=1 rot=0 variant=baseline plate=NONE
+[26/92] track=35 cluster=35 frame=111 rank=2 rot=0 variant=baseline plate=NONE
+[27/92] track=42 cluster=42 frame=131 rank=1 rot=0 variant=upscaled plate=DL10CY1530
+[28/92] track=44 cluster=44 frame=147 rank=1 rot=0 variant=baseline plate=NONE
+[29/92] track=46 cluster=46 frame=161 rank=1 rot=0 variant=baseline plate=NONE
+[30/92] track=41 cluster=41 frame=162 rank=1 rot=0 variant=baseline plate=NONE
+[31/92] track=41 cluster=41 frame=167 rank=2 rot=0 variant=baseline plate=NONE
+[32/92] track=41 cluster=41 frame=172 rank=3 rot=0 variant=baseline plate=NONE
+[33/92] track=47 cluster=47 frame=163 rank=1 rot=0 variant=baseline plate=NONE
+[34/92] track=43 cluster=43 frame=178 rank=1 rot=0 variant=baseline plate=HR26CY0466
+[35/92] track=43 cluster=43 frame=183 rank=2 rot=0 variant=sharpened plate=HR26CY0465
+[36/92] track=43 cluster=43 frame=201 rank=3 rot=0 variant=baseline plate=NONE
+[37/92] track=49 cluster=49 frame=203 rank=1 rot=0 variant=baseline plate=NONE
+[38/92] track=49 cluster=49 frame=208 rank=2 rot=0 variant=baseline plate=NONE
+[39/92] track=49 cluster=49 frame=214 rank=3 rot=0 variant=upscaled plate=DL90A2865
+[40/92] track=49 cluster=49 frame=527 rank=4 rot=0 variant=baseline plate=NONE
+[41/92] track=49 cluster=49 frame=522 rank=5 rot=0 variant=baseline plate=NONE
+[42/92] track=56 cluster=56 frame=210 rank=1 rot=0 variant=baseline plate=NONE
+[43/92] track=56 cluster=56 frame=217 rank=2 rot=0 variant=baseline plate=NONE
+[44/92] track=71 cluster=71 frame=239 rank=1 rot=0 variant=baseline plate=NONE
+[45/92] track=60 cluster=60 frame=247 rank=1 rot=0 variant=baseline plate=NONE
+[46/92] track=60 cluster=60 frame=253 rank=2 rot=0 variant=baseline plate=NONE
+[47/92] track=60 cluster=60 frame=261 rank=3 rot=0 variant=baseline plate=NONE
+[48/92] track=70 cluster=70 frame=339 rank=1 rot=0 variant=baseline plate=NONE
+[49/92] track=70 cluster=70 frame=330 rank=2 rot=0 variant=baseline plate=NONE
+[50/92] track=70 cluster=70 frame=311 rank=3 rot=0 variant=baseline plate=NONE
+[51/92] track=70 cluster=70 frame=299 rank=4 rot=0 variant=baseline plate=NONE
+[52/92] track=70 cluster=70 frame=304 rank=5 rot=0 variant=baseline plate=NONE
+[53/92] track=84 cluster=84 frame=299 rank=1 rot=0 variant=baseline plate=NONE
+[54/92] track=78 cluster=78 frame=429 rank=1 rot=0 variant=baseline plate=NONE
+[55/92] track=78 cluster=78 frame=437 rank=2 rot=0 variant=baseline plate=NONE
+[56/92] track=78 cluster=78 frame=444 rank=3 rot=0 variant=baseline plate=NONE
+[57/92] track=78 cluster=78 frame=408 rank=4 rot=0 variant=baseline plate=NONE
+[58/92] track=78 cluster=78 frame=413 rank=5 rot=0 variant=baseline plate=NONE
+[59/92] track=99 cluster=99 frame=328 rank=1 rot=0 variant=baseline plate=NONE
+[60/92] track=102 cluster=102 frame=334 rank=1 rot=0 variant=baseline plate=NONE
+[61/92] track=109 cluster=109 frame=339 rank=1 rot=0 variant=baseline plate=NONE
+[62/92] track=111 cluster=111 frame=345 rank=1 rot=0 variant=baseline plate=NONE
+[63/92] track=89 cluster=89 frame=366 rank=1 rot=0 variant=baseline plate=NONE
+[64/92] track=118 cluster=118 frame=366 rank=1 rot=0 variant=baseline plate=NONE
+[65/92] track=120 cluster=120 frame=376 rank=1 rot=0 variant=clahe plate=DL20B0144
+[66/92] track=120 cluster=120 frame=381 rank=2 rot=0 variant=baseline plate=NONE
+[67/92] track=113 cluster=78 frame=408 rank=1 rot=0 variant=baseline plate=NONE
+[68/92] track=113 cluster=78 frame=398 rank=2 rot=0 variant=baseline plate=NONE
+[69/92] track=125 cluster=125 frame=395 rank=1 rot=0 variant=baseline plate=NONE
+[70/92] track=126 cluster=78 frame=398 rank=1 rot=0 variant=baseline plate=NONE
+[71/92] track=130 cluster=130 frame=415 rank=1 rot=0 variant=baseline plate=NONE
+[72/92] track=131 cluster=131 frame=474 rank=1 rot=0 variant=baseline plate=HR12AL2029
+[73/92] track=131 cluster=131 frame=468 rank=2 rot=0 variant=baseline plate=HR12AL2029
+[74/92] track=131 cluster=131 frame=479 rank=3 rot=0 variant=baseline plate=HR12AL2029
+[75/92] track=131 cluster=131 frame=458 rank=4 rot=0 variant=baseline plate=HR12AL2029
+[76/92] track=131 cluster=131 frame=484 rank=5 rot=0 variant=baseline plate=HR12AL2029
+[77/92] track=86 cluster=86 frame=470 rank=1 rot=0 variant=baseline plate=NONE
+[78/92] track=132 cluster=132 frame=525 rank=1 rot=0 variant=baseline plate=NONE
+[79/92] track=132 cluster=132 frame=531 rank=2 rot=0 variant=baseline plate=NONE
+[80/92] track=132 cluster=132 frame=539 rank=3 rot=0 variant=baseline plate=NONE
+[81/92] track=132 cluster=132 frame=562 rank=4 rot=0 variant=baseline plate=NONE
+[82/92] track=132 cluster=132 frame=575 rank=5 rot=0 variant=baseline plate=NONE
+[83/92] track=149 cluster=149 frame=570 rank=1 rot=0 variant=baseline plate=NONE
+[84/92] track=149 cluster=149 frame=595 rank=2 rot=0 variant=baseline plate=NONE
+[85/92] track=149 cluster=149 frame=581 rank=3 rot=0 variant=baseline plate=NONE
+[86/92] track=154 cluster=154 frame=569 rank=1 rot=0 variant=baseline plate=NONE
+[87/92] track=168 cluster=168 frame=660 rank=1 rot=0 variant=baseline plate=NONE
+[88/92] track=168 cluster=168 frame=666 rank=2 rot=0 variant=baseline plate=NONE
+[89/92] track=168 cluster=168 frame=671 rank=3 rot=0 variant=baseline plate=NONE
+[90/92] track=157 cluster=157 frame=690 rank=1 rot=0 variant=baseline plate=NONE
+[91/92] track=194 cluster=194 frame=722 rank=1 rot=0 variant=baseline plate=NONE
+[92/92] track=192 cluster=192 frame=726 rank=1 rot=0 variant=baseline plate=NONE
+
+========================================================================
+M25D COMPLETE
+========================================================================
+Static parser-valid crops: 9
+Final parser-valid crops: 15
+Preprocessing rescues: 6
+Clusters with candidate: 8
+
+Frame predictions: /home/divya/projects/IndianANPR/outputs/M25_final_road_eval/M25D_frame_predictions.csv
+Orientation candidates: /home/divya/projects/IndianANPR/outputs/M25_final_road_eval/M25D_orientation_candidates.csv
+Preprocessing candidates: /home/divya/projects/IndianANPR/outputs/M25_final_road_eval/M25D_preprocessing_candidates.csv
+Summary: /home/divya/projects/IndianANPR/outputs/M25_final_road_eval/M25D_ocr_summary.txt
+
+M25D wall time: 25.94 seconds
+M25D max RAM: 1868512 KB
