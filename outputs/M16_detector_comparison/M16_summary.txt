@@ -1,0 +1,28 @@
+M16 DETECTOR BENCHMARK ANALYSIS
+============================================================
+
+Completed models:
+YOLOv8n, YOLO11n, YOLO11s
+
+Dataset:
+IURS-NPDS leakage-safe source-level split
+
+Held-out test winners:
+Precision: YOLO11n (0.9544)
+Recall: YOLO11s (0.9625)
+F1: YOLO11n (0.9582)
+mAP50: YOLO11n (0.9666)
+mAP50-95: YOLO11s (0.7063)
+
+Efficiency winners:
+Fastest inference: YOLOv8n (2.991 ms/image)
+Smallest model: YOLO11n (5.22 MB)
+Lowest peak VRAM: YOLOv8n (1.318 GB)
+
+Project model selection:
+YOLO11n is selected as the primary detector for the next ANPR optimization stage.
+It provides the strongest overall accuracy-efficiency balance: highest Precision, F1 and mAP50, strong mAP50-95, and substantially lower compute cost than YOLO11s.
+
+YOLO11s achieved the highest mAP50-95, but the localization improvement is small relative to its increase in parameters, model size and inference latency.
+
+RT-DETR-L is not included in this completed comparison because its full training run was deferred due to computational and time constraints.

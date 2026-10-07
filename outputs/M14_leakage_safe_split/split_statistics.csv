@@ -1,0 +1,4 @@
+split,source_ids,images
+train,2683,15429
+val,335,1891
+test,336,1989

@@ -1,0 +1,39 @@
+M14 — LEAKAGE-SAFE SOURCE-LEVEL SPLIT
+============================================================
+
+Objective
+---------
+Audit the original IURS-NPDS train/validation/test structure
+for source-level leakage and create a source-independent split.
+
+Leakage-safe split
+------------------
+Train:
+  Source IDs : 2683
+  Images     : 15429
+
+Validation:
+  Source IDs : 335
+  Images     : 1891
+
+Test:
+  Source IDs : 336
+  Images     : 1989
+
+Source overlap
+--------------
+Train ∩ Val  : 0
+Train ∩ Test : 0
+Val ∩ Test   : 0
+
+Conclusion
+----------
+The corrected split is source-independent and should be used
+for all controlled detector comparisons.
+
+Dataset:
+data/processed/npds_leakage_safe/dataset.yaml
+
+Scripts:
+src/detection/analyze_npds_leakage.py
+src/detection/create_leakage_safe_split.py

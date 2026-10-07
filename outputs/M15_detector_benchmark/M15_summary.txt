@@ -1,0 +1,43 @@
+M15 — CONTROLLED DETECTOR BENCHMARK
+============================================================
+
+Dataset:
+IURS-NPDS leakage-safe source-level split
+
+Controlled conditions:
+50 epochs
+Image size: 640 × 640
+Batch: 8
+Seed: 42
+Pretrained weights
+AMP enabled
+GPU: NVIDIA RTX 4050 Laptop GPU
+
+Completed models:
+YOLOv8n: P=0.9424, R=0.9590, F1=0.9506, mAP50=0.9625, mAP50-95=0.6707, Inference=2.99 ms
+YOLO11n: P=0.9544, R=0.9621, F1=0.9582, mAP50=0.9666, mAP50-95=0.6998, Inference=3.67 ms
+YOLO11s: P=0.9527, R=0.9625, F1=0.9576, mAP50=0.9637, mAP50-95=0.7063, Inference=7.38 ms
+
+Experimental findings:
+
+YOLOv8n:
+- Fastest completed detector.
+- Lowest mAP50-95 among the three.
+
+YOLO11n:
+- Highest Precision, F1 and mAP50.
+- Smallest model weight file.
+- Strong accuracy-efficiency balance.
+- Selected as primary detector.
+
+YOLO11s:
+- Highest mAP50-95.
+- Higher computational and memory cost.
+- Localization gain over YOLO11n is relatively small.
+
+RT-DETR-L:
+- Full training deferred because of time/computational constraints.
+- Not included in the completed benchmark comparison.
+
+Primary selection:
+YOLO11n
