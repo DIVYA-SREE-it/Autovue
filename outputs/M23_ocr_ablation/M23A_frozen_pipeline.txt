@@ -1,0 +1,71 @@
+M23A — FROZEN OCR PIPELINE
+============================================================
+
+The OCR pipeline is frozen BEFORE TEST evaluation.
+
+FINAL METHOD
+------------
+
+1. Input:
+   license-plate crop.
+
+2. OCR:
+   PaddleOCR 3.7.0
+   PP-OCRv5_server_det
+   PP-OCRv5_server_rec
+
+3. First pass:
+   OCR at original 0-degree orientation.
+
+4. Normalize OCR text:
+   uppercase;
+   remove spaces, punctuation and non-alphanumeric text.
+
+5. Indian registration parser:
+   search for plausible registrations using:
+
+   AA00A0000
+   AA00AA0000
+
+   Validate:
+   - Indian state/UT prefix
+   - two district digits
+   - one/two-letter series
+   - four registration digits
+
+   Limited OCR letter/digit confusion repair is allowed
+   only according to expected character type.
+
+6. Early exit:
+   if the 0-degree result produces a plausible plate,
+   accept it.
+
+7. Orientation rescue:
+   if unresolved, run OCR at:
+
+   90 degrees
+   180 degrees
+   270 degrees
+
+8. Parse each rotated OCR result using the SAME parser.
+
+9. Candidate selection:
+   choose by:
+
+   a. lower correction cost
+   b. fewer removed/noise characters
+   c. higher OCR confidence
+   d. lower rotation angle on exact tie
+
+10. No generic preprocessing rescue.
+
+11. No spatial-order rescue.
+
+12. Ground truth must never participate in inference or
+    candidate selection.
+
+13. TEST results must not be used to modify this pipeline.
+
+STATUS
+------
+FROZEN FOR HELD-OUT OCR TEST EVALUATION.

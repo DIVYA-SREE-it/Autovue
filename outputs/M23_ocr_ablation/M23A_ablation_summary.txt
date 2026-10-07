@@ -1,0 +1,96 @@
+M23A — OCR DEV ABLATION SUMMARY
+============================================================
+
+Evaluation set
+--------------
+26 manually VERIFIED DEV plates.
+
+OCR TEST remains untouched.
+
+Selected OCR engine
+-------------------
+PaddleOCR 3.7.0
+
+PP-OCRv5_server_det
+PP-OCRv5_server_rec
+
+DEV progression
+---------------
+Raw PaddleOCR:
+
+Exact:
+2/26
+
+Accuracy:
+7.69%
+
+CER:
+67.32%
+
+Mean latency:
+38.98 ms
+
+
+Selected final DEV pipeline:
+
+PaddleOCR
++ Indian plate-aware parser
++ adaptive orientation rescue
+
+Exact:
+8/26
+
+Accuracy:
+30.77%
+
+CER:
+53.31%
+
+Mean adaptive latency:
+119.58 ms
+
+
+Improvement over raw PaddleOCR
+------------------------------
+Exact-accuracy gain:
+
++23.08 percentage points
+
+CER reduction:
+
+-14.01 percentage points
+
+
+Accepted components
+-------------------
+KEEP:
+Indian plate-aware parser
+
+KEEP:
+Adaptive orientation rescue
+
+
+Rejected components
+-------------------
+REJECT:
+Generic preprocessing rescue
+
+Reason:
+No exact-match or CER improvement and substantial
+latency increase.
+
+REJECT:
+Spatial-order rescue
+
+Reason:
+No DEV improvement.
+
+
+Research rule
+-------------
+All OCR method selection was performed on DEV.
+
+The OCR TEST set has not been used for method selection.
+
+The frozen method should now be evaluated on TEST once,
+without further tuning from TEST results.

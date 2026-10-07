@@ -1,0 +1,7 @@
+stage,method,exact_matches,total,exact_accuracy_pct,cer_pct,mean_latency_ms,decision,reason
+M21B,EasyOCR raw,0,26,0.0,77.43,39.98,BASELINE,Comparison OCR baseline
+M21C,PaddleOCR raw,2,26,7.69,67.32,38.98,KEEP_ENGINE,Lower CER and only raw exact matches
+M22A,PaddleOCR + Indian plate parser,6,26,23.08,63.81,38.98,KEEP,Recovered 4 additional exact plates
+M22B,Parser + adaptive orientation,8,26,30.77,53.31,119.58,KEEP_FINAL,Best DEV exact accuracy and CER
+M22C,Parser + preprocessing rescue,6,26,23.08,63.81,250.91,REJECT,No accuracy/CER gain; large latency cost
+M22D,Parser + spatial-order rescue,6,26,23.08,63.81,,REJECT,No DEV improvement
