@@ -1,0 +1,3 @@
+cluster_id,member_tracks,candidate,support_track,support_frame,source,raw_text,matching_fragment,fragment_length,required_length
+108,108|123,AP31AE7144,108,275,preprocess_clahe,31AE7144,31AE7144,8,6
+108,108|123,AP31AE7144,123,289,raw_0deg,VANROAE7144,AE7144,6,6

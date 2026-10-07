@@ -1,0 +1,77 @@
+M24F — RE-ASSOCIATED CLUSTER TEMPORAL CONSENSUS
+============================================================
+
+Purpose
+-------
+Recompute temporal OCR evidence after conservative
+tracker-ID re-association.
+
+Re-association
+--------------
+Track IDs were merged only when M24E found a
+pixel-identical crop in the same video frame.
+
+OCR predictions and ground truth were NOT used to create
+clusters.
+
+Merged clusters in this pilot:
+1
+
+Temporal candidate selection
+----------------------------
+Complete parser-valid candidates are selected using:
+
+1. more distinct-frame support
+2. higher OCR confidence
+3. lower grammar correction cost
+4. higher crop quality
+
+Fragment corroboration
+----------------------
+The exact SAME rule from M24C is retained:
+
+- fragment cannot create a plate
+- it can only support an existing full candidate
+- independent frame required
+- longest exact contiguous substring
+- letters and digits required
+- >= 60% of plate length
+- minimum 6 characters
+
+Results
+-------
+VERIFIED_FULL:
+0
+
+CORROBORATED_FRAGMENT:
+1
+
+NEEDS_REVIEW:
+1
+
+REJECTED:
+1
+
+Evaluation
+----------
+Scoreable re-associated clusters:
+3
+
+Clusters with exact complete candidate:
+2
+
+Do NOT convert this count into general road accuracy.
+
+This remains a small development pilot.
+
+Research interpretation
+-----------------------
+M24E/M24F test whether identity fragmentation prevents
+OCR evidence from being accumulated at the physical
+vehicle level.
+
+Any improvement in temporal evidence after re-association
+comes from combining observations across tracker IDs,
+not from changing the OCR model or using ground truth.
+
+A future unseen road-video evaluation is still required.

@@ -1,0 +1,4 @@
+cluster_id,member_tracks,cluster_ground_truth,gt_status,prediction,temporal_status,full_frame_support,fragment_support_frames,exact
+108,108|123,AP31AE7144,CONSISTENT,AP31AE7144,CORROBORATED_FRAGMENT,1,2,True
+150,150,AP31AE7144,CONSISTENT,,REJECTED,0,0,False
+252,252,AP11Z3837,CONSISTENT,AP11Z3837,NEEDS_REVIEW,1,0,True

@@ -1,0 +1,4 @@
+cluster_id,member_tracks,final_candidate,full_frame_support,full_track_support,fragment_support_frames,fragment_support_tracks,best_fragment,best_fragment_length,status
+108,108|123,AP31AE7144,1,1,2,2,31AE7144,8,CORROBORATED_FRAGMENT
+150,150,,0,0,0,0,,0,REJECTED
+252,252,AP11Z3837,1,1,0,0,,0,NEEDS_REVIEW
