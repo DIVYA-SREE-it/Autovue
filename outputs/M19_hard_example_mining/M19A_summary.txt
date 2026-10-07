@@ -1,0 +1,44 @@
+M19A — REAL-ROAD HARD-EXAMPLE MINING
+============================================================
+
+Source:
+M18 human-reviewed real-road evaluation
+
+Pure hard-negative frames:
+2
+
+Definition:
+False positive present AND zero visible real plates.
+These frames can safely become YOLO negative examples
+with empty annotation files.
+
+Mixed false-positive frames:
+6
+
+Definition:
+False positive present AND at least one real plate.
+These frames must NOT be treated as empty negatives.
+Real plate boxes must be annotated before training.
+
+False-negative / domain-positive candidates:
+35
+
+Definition:
+At least one clearly visible real plate was missed.
+These are candidates for real-road positive annotation
+and domain-adaptation training.
+
+Important:
+A single frame may belong to both mixed-FP and FN groups.
+
+Current M18 baseline:
+TP = 19
+FP = 8
+FN = 38
+Precision = 0.7037
+Recall = 0.3333
+F1 = 0.4524
+
+Primary M19 objective:
+Improve real-road recall while reducing text/signboard
+false positives without harming NPDS validation performance.
