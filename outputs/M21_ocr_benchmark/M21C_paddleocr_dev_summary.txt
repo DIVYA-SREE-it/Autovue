@@ -1,0 +1,87 @@
+M21C — PADDLEOCR RAW DEV BENCHMARK
+============================================================
+
+Evaluation split
+----------------
+OCR DEV only
+
+Verified readable samples:
+26
+
+OCR engine
+----------
+PaddleOCR 3.7.0
+
+Detector:
+PP-OCRv5_server_det
+
+Recognizer:
+PP-OCRv5_server_rec
+
+Device:
+NVIDIA RTX 4050 Laptop GPU
+
+Preprocessing
+-------------
+NONE
+
+Grammar correction
+------------------
+NONE
+
+Orientation correction
+----------------------
+NONE
+
+Prediction normalization
+------------------------
+Uppercase
+Remove spaces/punctuation/non-alphanumeric characters
+
+Results
+-------
+Exact matches:
+2/26
+
+Exact-match accuracy:
+0.0769
+(7.69%)
+
+Total GT characters:
+257
+
+Total Levenshtein edit distance:
+173
+
+Character Error Rate (CER):
+0.6732
+(67.32%)
+
+Blank predictions:
+7
+
+Blank prediction rate:
+0.2692
+(26.92%)
+
+Runtime
+-------
+Model initialization excluded.
+Three warmup inferences excluded.
+
+Mean latency per crop:
+38.98 ms
+
+Median latency per crop:
+38.61 ms
+
+Methodology
+-----------
+Only manually VERIFIED DEV samples were scored.
+
+UNREADABLE samples were excluded.
+
+OCR TEST was NOT evaluated.
+
+No preprocessing, orientation correction, grammar repair,
+or OCR configuration was selected using TEST data.
