@@ -1,0 +1,6 @@
+cluster_id,member_tracks,candidate,candidate_frame_count,support_frame,original_track_id,source,raw_text,matching_fragment,fragment_length,required_length
+4,4,DL01J0968,1,22,4,raw_0deg,DLBC1J0968,1J0968,6,6
+4,4,DL01J0968,1,27,4,preprocess_threshold,DL8C1J0968,1J0968,6,6
+4,4,DL01J0968,1,48,4,preprocess_threshold,0L81J0968,1J0968,6,6
+26,26,DL10CY1530,3,88,26,preprocess_upscaled,L10CY1530,L10CY1530,9,6
+43,43,HR26CY0466,1,183,43,preprocess_sharpened,HR26CY0465,HR26CY046,9,6

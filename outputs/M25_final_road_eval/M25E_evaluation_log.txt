@@ -1,0 +1,64 @@
+========================================================================
+M25E — FROZEN CLUSTER TEMPORAL CONSENSUS
+========================================================================
+
+cluster=  1 tracks=1          plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster=  4 tracks=4          plate=DL01J0968    full=1 fragment=3 best=1J0968     CORROBORATED_FRAGMENT
+cluster=  7 tracks=7          plate=HR12AL2029   full=1 fragment=0 best=-          NEEDS_REVIEW
+cluster= 15 tracks=15         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 21 tracks=21         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 26 tracks=26         plate=DL10CY1530   full=3 fragment=1 best=L10CY1530  VERIFIED_FULL
+cluster= 29 tracks=29         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 30 tracks=30         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 34 tracks=34         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 35 tracks=35         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 36 tracks=36         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 37 tracks=37         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 41 tracks=41         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 42 tracks=42         plate=DL10CY1530   full=1 fragment=0 best=-          NEEDS_REVIEW
+cluster= 43 tracks=43         plate=HR26CY0466   full=1 fragment=1 best=HR26CY046  CORROBORATED_FRAGMENT
+cluster= 44 tracks=44         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 46 tracks=46         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 47 tracks=47         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 49 tracks=49         plate=DL90A2865    full=1 fragment=0 best=-          NEEDS_REVIEW
+cluster= 56 tracks=56         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 60 tracks=60         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 70 tracks=70         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 71 tracks=71         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 78 tracks=78|113|126 plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 84 tracks=84         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 86 tracks=86         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 89 tracks=89         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster= 99 tracks=99         plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster=102 tracks=102        plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster=109 tracks=109        plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster=111 tracks=111        plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster=118 tracks=118        plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster=120 tracks=120        plate=DL20B0144    full=1 fragment=0 best=-          NEEDS_REVIEW
+cluster=125 tracks=125        plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster=130 tracks=130        plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster=131 tracks=131        plate=HR12AL2029   full=5 fragment=0 best=-          VERIFIED_FULL
+cluster=132 tracks=132        plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster=149 tracks=149        plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster=154 tracks=154        plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster=157 tracks=157        plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster=168 tracks=168        plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster=192 tracks=192        plate=NONE         full=0 fragment=0 best=-          REJECTED
+cluster=194 tracks=194        plate=NONE         full=0 fragment=0 best=-          REJECTED
+
+========================================================================
+M25E COMPLETE
+========================================================================
+Complete-candidate clusters: 8
+VERIFIED_FULL: 2
+CORROBORATED_FRAGMENT: 2
+NEEDS_REVIEW: 4
+REJECTED: 35
+
+Candidate options: /home/divya/projects/IndianANPR/outputs/M25_final_road_eval/M25E_candidate_options.csv
+Fragment evidence: /home/divya/projects/IndianANPR/outputs/M25_final_road_eval/M25E_fragment_evidence.csv
+Consensus: /home/divya/projects/IndianANPR/outputs/M25_final_road_eval/M25E_cluster_consensus.csv
+Summary: /home/divya/projects/IndianANPR/outputs/M25_final_road_eval/M25E_temporal_consensus_summary.txt
+
+M25E wall time: 0.04 seconds
+M25E max RAM: 13984 KB

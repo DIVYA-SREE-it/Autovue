@@ -1,0 +1,100 @@
+M25E — FROZEN CLUSTER TEMPORAL CONSENSUS
+============================================================
+
+Purpose
+-------
+Apply the already-developed M24F temporal confidence rules
+to the frozen unseen-road M25 predictions.
+
+Ground truth used:
+NO
+
+Input
+-----
+OCR crops:
+92
+
+Raw tracker IDs:
+45
+
+Conservative M25C clusters:
+43
+
+Parser-valid crop predictions:
+15
+
+Candidate selection
+-------------------
+For multiple complete candidates in one cluster:
+
+1. More distinct complete-support frames
+2. Higher mean OCR confidence
+3. Lower mean grammar correction cost
+4. Higher mean crop quality
+
+Ground truth is never used.
+
+Fragment corroboration
+----------------------
+A fragment can support an existing complete candidate only.
+
+Fragments NEVER create or reconstruct a registration.
+
+Requirements:
+
+1. Different frame from complete candidate
+2. Longest exact contiguous substring
+3. Contains letters and digits
+4. Length >= 60% of candidate
+5. Absolute minimum length = 6
+
+Final status
+------------
+VERIFIED_FULL:
+At least two independent frames produce the complete
+selected registration.
+
+CORROBORATED_FRAGMENT:
+One complete candidate exists and a qualifying fragment
+from another frame supports it.
+
+NEEDS_REVIEW:
+A complete candidate exists but has no independent
+temporal corroboration.
+
+REJECTED:
+No complete parser-valid candidate exists.
+
+Results
+-------
+Clusters with complete candidate:
+8
+
+Unique selected candidate strings:
+6
+
+VERIFIED_FULL:
+2
+
+CORROBORATED_FRAGMENT:
+2
+
+NEEDS_REVIEW:
+4
+
+REJECTED:
+35
+
+Fragment evidence frames:
+5
+
+Important
+---------
+These statuses describe temporal evidence strength.
+
+They are NOT OCR accuracy labels.
+
+The M25 video has not yet been manually transcribed for
+final ground-truth accuracy evaluation.
+
+No cluster is merged based on matching OCR text.
